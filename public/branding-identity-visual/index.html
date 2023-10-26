@@ -1,12 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="/public/css/output.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1 class="font-bold text-2xl p-4">Hello World</h1>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="w-full fixed top-0 h-auto px-6 lg:px-32 xl:px-0 bg-white  z-[999999]  shadow-xl">
+            <div class="flex items-center  justify-between max-w-[1220px]  h-[74px] lg:h-20  mx-auto  ">
+                <img src="./../../assets/img/logo.png" class="cursor-pointer h-11 lg:h-12 xl:h-14" alt="logo hi-social">
+                <ul class="hidden lg:flex items-center space-x-7 xl:space-x-10 text-[18px]">
+                    <li class="hover:text-gray-400">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="">Service</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="">Portofolio</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="">About Us</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="">ENG</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button
+                                class="bg-blue-500 px-4 py-2 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                                Us</button>
+                        </a>
+                    </li>
+                </ul>
+                <button class="menu-btn lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div
+            class="nav-menu fixed w-screen h-[calc(100vh-74px)] lg:hidden left-0 right-0 -top-[100vh] px-6 py-4 bg-white z-40 opacity-40 transition-all duration-700">
+            <ul class="font-bold space-y-2">
+                <li class="pb-2  hover:text-gray-400 border-b border-b-gray-500 hover:border-b-gray-300">
+                    <a href="">Home</a>
+                </li>
+                <li class="pb-2 hover:text-gray-400 border-b border-b-gray-500 hover:border-b-gray-300">
+                    <a href="">Service</a>
+                </li>
+                <li class="pb-2 hover:text-gray-400 border-b border-b-gray-500 hover:border-b-gray-300">
+                    <a href="">Portofolio</a>
+                </li>
+                <li class="pb-2 hover:text-gray-400 border-b border-b-gray-500 hover:border-b-gray-300">
+                    <a href="">About Us</a>
+                </li>
+                <li class="pt-6">
+                    <a href="#">
+                        <button
+                            class="bg-blue-500 w-full lg:w-auto px-4 py-2 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                            Us</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="max-w-[1920px] sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-[1920px] mx-auto">
+
+        <!-- Banner -->
+        <section class=" lg:mt-16 relative flex flex-col items-center font-plus-jakarta-sans sm:w-full px-6">
+            <img class="w-full h-full absolute" src="./../../assets/img/service-detail1.png"
+                alt="Banner Service Detail" />
+            <div class="relative z-20 flex flex-row mt-[100px] gap-5 max-w-[1230px] mx-auto mb-10">
+                <div class="w-full h-full">
+                    <h1 class="text-[38px] font-bold text-[#004073] lg:text-[42px]">Elevate Your Brand With Our
+                        Expert<span class="text-[#008FFF]"> Branding Identity Visual Service</span></h1>
+                    <p class="leading-loose mt-4 text-[18px] lg:text-[20px]">we know that a powerful brand identity goes
+                        beyond aesthetics; it&apos;s a strategic asset that defines your business, speaks to your
+                        audience, and sets you apart in a crowded market. We&apos;re here to partner with you and bring
+                        your brand to life.</p>
+                    <button
+                        class="text-white mt-10 bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-[20px] shadow-blue-400 w-[120px] h-[50px] lg:h-14 lg:w-72 ">Get
+                        Started</button>
+
+                </div>
+                <div class="h-full w-full ml-10 -mt-12 hidden lg:block">
+                    <img class="object-cover" src="./../../assets/img/service-image1.png" alt="" />
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- Collaborate Company -->
+        <section class="bg-[#004073] h-full font-plus-jakarta-sans px-3">
+            <div class="text-white text-center w-full">
+                <h1 class="pt-14 pb-10 text-[18px] lg:text-[22px] font-light">We Have Collaborated With Companies And
+                    Educational Agencies.</h1>
+            </div>
+            <div class="container mx-auto pb-12">
+                <div class="flex flex-row max-w-[1230px] justify-center items-center mx-auto gap-16 flex-wrap">
+                    <div class="flex justify-end items-center">
+                        <img class="" src="./../../assets/img/colaborate3.png" alt="" />
+                    </div>
+                    <div class="">
+                        <img src="./../../assets/img/colaborate2.png" alt="" />
+                    </div>
+                    <div class="">
+                        <img class="w-36" src="./../../assets/img/colaborate1.png" alt="" />
+                    </div>
+                    <div class="">
+                        <img class="w-36" src="./../../assets/img/colaborate4.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Collaborate Company -->
+
+        <!-- Offer -->
+        <section class="mb-6 md:m-12 z-40 px-4 font-plus-jakarta-sans">
+            <div class="mt-16 text-center max-w-[789px] mx-auto">
+                <h1 class="text-[38px] lg:text-[42px] font-bold text-[#004073]">What We <span
+                        class="text-[#008FFF]">Offer?</span></h1>
+                <p class="leading-loose mt-2 text-[16px] lg:text-[22px]">We Offer creative design solutions and build
+                    branding for our client companies including Logo, branding Strategy and Visual Identity.</p>
+            </div>
+
+            <div class="h-full mt-12 flex flex-row gap-2 max-w-[1230px] mx-auto">
+                <div class="w-full -ml-4 hidden lg:block">
+                    <img src="./../../assets/img/imageoffer.png" alt="offer 1" class="w-full h-full" />
+                </div>
+                <div class="w-full flex flex-col fex-wrap gap-9 justify-center items-center">
+                    <div class="h-[246px] max-w-[600px] rounded-[20px] shadow-2xl">
+                        <div class="border-b-2 h-[70px] flex justify-between items-center p-6">
+                            <p class="flex text-[16px] lg:text-[20px] items-center font-semibold">Custom Visual Identity
+                            </p>
+                            <button class="w-[158px] h-[40px] text-white bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-full shadow-blue-400">Learn
+                                More</button>
+                        </div>
+                        <div class="p-6">
+                            <p class="leading-7 text-[15px] lg:text-[18px]">We craft unique visual elements, from logos
+                                and color palettes to typography and imagery, tailored to your brands personality and
+                                message.</p>
+                        </div>
+                    </div>
+                    <div class="h-[246px] max-w-[600px] rounded-[20px] shadow-2xl">
+                        <div class="border-b-2 h-[70px] flex justify-between items-center p-6">
+                            <p class="flex text-[16px] lg:text-[20px] items-center font-semibold">Eye-Catching Graphics
+                            </p>
+                            <button class="w-[158px] h-[40px] text-white bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-full shadow-blue-400">Learn
+                                More</button>
+                        </div>
+                        <div class="p-6">
+                            <p class="leading-7 text-[16px] lg:text-[18px]">Our team of talented designers will create
+                                stunning visuals that captivate your audience and reinforce your brands story.</p>
+                        </div>
+                    </div>
+                    <div class="h-[246px] max-w-[600px] rounded-[20px] shadow-2xl">
+                        <div class="border-b-2 h-[70px] flex justify-between items-center p-6">
+                            <p class="flex text-[16px] lg:text-[20px] items-center font-semibold">Brand Transformation
+                            </p>
+                            <button class="w-[158px] h-[40px] text-white bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-full shadow-blue-400">Learn
+                                More</button>
+                        </div>
+                        <div class="p-6">
+                            <p class="leading-7 text-[16px] lg:text-[18px]">Our Branding Identity Visual Service will
+                                empower your brand to soar and leave an indelible mark.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Offer -->
+
+        <!-- WhyUs -->
+        <section class="mt-24 lg:m-5 px-4">
+            <div class="mx-auto max-w-[1230px] rounded-xl bg-[#008FFF] pb-4 font-plus-jakarta-sans">
+                <div class="text-white h-52 text-center max-w-[789px] mx-auto p-6">
+                    <h1 class="pt-5 lg:pt-12 text-[28px] lg:text-[42px] font-bold">Why<span class="text-[#EDC700]"> Work With Us?</span></h1>
+                    <p class="leading-loose font-light mt-2 text-[18px] lg:text-[20px]">We have collaborated with various successful businessmen in building branding with our professionals.</p>
+                </div>
+        
+                <div class="items flex flex-row justify-center flex-wrap gap-10 max-w-6xl mx-auto md:my-12 my-4 p-6 lg:p-0">
+                    <div class="h-[226px] max-w-[335px] border rounded-[20px] bg-white shadow-2xl">
+                        <h1 class="m-4">Icons</h1>
+                        <h1 class="m-4 font-bold text-[#008FFF] text-[20px]">Experience</h1>
+                        <p class="m-4 leading-normal font-light text-[18px]">With years of experience in branding, we understand what it takes to create a strong brand presence.</p>
+                    </div>
+                    <div class="h-[226px] w-[335px]  border rounded-[20px] bg-white shadow-2xl">
+                        <h1 class="m-4">Icons</h1>
+                        <h1 class="m-4 font-bold text-[#008FFF] text-[20px]">Creativity</h1>
+                        <p class="m-4 leading-normal font-light text-[18px]">Our designers are passionate about creativity and innovation, ensuring your brand stands out in a crowded market.</p>
+                    </div>
+                    <div class="h-[226px] w-[335px]  border rounded-[20px] bg-white shadow-2xl">
+                        <h1 class="m-4">Icons</h1>
+                        <h1 class="m-4 font-bold text-[#008FFF] text-[20px]">Client Success</h1>
+                        <p class="m-4 leading-normal font-light text-[18px]">We measure our success by the success of our clients. Check out our portfolio to see the brands we've transformed.</p>
+                    </div>
+                </div>
+        
+                <div class="h-full max-w-[320px] lg:max-w-[580px] sm:max-w-[450px] rounded-[20px] bg-white mb-12 shadow-2xl flex mx-auto">
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="flex items-center justify-center col-span-2 m-4 border-r-2 pr-2">
+                            <img class="" src="./../../assets/img/profil-us.png" alt="" />
+                        </div>
+                        <div class="text-center mr-4 mt-2">
+                            <h1 class="text-[36px] lg:text-[50px] font-bold text-[#008FFF]">50+</h1>
+                            <p class="font-semibold pb-4 text-[14px] sm:text-[16px]">Meet Our Professional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End WhyUs -->
+
+        <!-- Project -->
+        <section class="mx-4 h-full mt-20 font-plus-jakarta-sans">
+            <div class="h-full max-w-[1230px] mx-auto">
+                <div class="flex flex-row flex-wrap max-w-full justify-center lg:justify-between">
+                    <div class="max-w-[789px]">
+                        <h1 class="text-[32px] lg:text-[38px] font-bold"><span class="text-[#008FFF]">Our Project</span> Have Done</h1>
+                    </div>
+                    <div class="flex max-w-full flex-wrap items-center mt-2 md:mt-0 lg:px-0">
+                        <button class=" m-2 lg:w-[130px] w-full h-[44px] bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-full shadow-blue-400 text-[16px] text-white">Logo Design</button>
+                        <button class="m-2 lg:w-[170px] w-full h-[44px] bg-transparent hover:bg-slate-200 border border-slate-500 shadow-3xl rounded-full shadow-blue-400 font-light text-[16px]">Branding Strategy</button>
+                        <button class="m-2 lg:w-[150px] w-full h-[44px] bg-transparent hover:bg-slate-200 border border-slate-500 shadow-3xl rounded-full shadow-blue-400 font-light text-[16px]">Visual Identity</button>
+                    </div>
+                </div>
+                <div class="h-full mt-2 md:mt-10 flex flex-wrap justify-center items-center gap-4">
+                    <div class="border w-[395px] h-full bg-white rounded-[20px] shadow-xl">
+                        <div>
+                            <img src="./../../assets/img/service-project1.png" alt="Service Project 1" />
+                        </div>
+                        <div class="flex justify-end h-12 pr-4 mb-2 items-center">
+                            <h1 class="font-bold text-[20px] mr-4">Flower Farm</h1>
+                            <h2 class="cursor-pointer"><img src="./../../assets/icons/icon-offer.svg" alt="" /></h2>
+                        </div>
+                    </div>
+                    <div class="w-[395px] h-full bg-white rounded-[20px] shadow-xl">
+                        <div>
+                            <img src="./../../assets/img/service-project2.png" alt="Service Project 2" />
+                        </div>
+                        <div class="flex justify-end h-12 pr-4 mb-2 items-center">
+                            <h1 class="font-bold text-[20px] mr-4">Flower Farm</h1>
+                            <h2 class="cursor-pointer"><img src="./../../assets/icons/icon-offer.svg" alt="" /></h2>
+                        </div>
+                    </div>
+                    <div class="w-[395px] h-full bg-white rounded-[20px] shadow-xl">
+                        <div>
+                            <img src="./../../assets/img/service-project3.png" alt="Service Project 3" />
+                        </div>
+                        <div class="flex justify-end h-12 pr-4 mb-2 items-center">
+                            <h1 class="font-bold text-[20px] mr-4">Flower Farm</h1>
+                            <h2 class="cursor-pointer"><img src="./../../assets/icons/icon-offer.svg" alt="" /></h2>
+                        </div>
+                    </div>
+                    <div class="w-[395px] h-full bg-white rounded-[20px] shadow-xl">
+                        <div>
+                            <img src="./../../assets/img/service-project4.png" alt="Service Project 4" />
+                        </div>
+                        <div class="flex justify-end h-12 pr-4 mb-2 items-center">
+                            <h1 class="font-bold text-[20px] mr-4">Flower Farm</h1>
+                            <h2 class="cursor-pointer"><img src="./../../assets/icons/icon-offer.svg" alt="" /></h2>
+                        </div>
+                    </div>
+                    <div class="w-[395px] h-full bg-white rounded-[20px] shadow-xl">
+                        <div>
+                            <img src="./../../assets/img/service-project5.png" alt="Service Project 5" />
+                        </div>
+                        <div class="flex justify-end h-12 pr-4 mb-2 items-center">
+                            <h1 class="font-bold text-[20px] mr-4">Flower Farm</h1>
+                            <h2 class="cursor-pointer"><img src="./../../assets/icons/icon-offer.svg" alt="" /></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Project -->
+
+        <!-- Design Price -->
+        <section class="my-28 h-full max-w-[1230px] mx-auto font-plus-jakarta-sans">
+            <div class="h-full text-center max-w-full mx-auto my-8 px-4">
+                <h1 class="text-[38px] md:text-[48px] font-bold">Design<span class="text-[#008FFF]"> Prices</span></h1>
+                <p class="px-2 leading-loose font-light mt-2 text-[20px] md:text-[22px]">Professional and best Logo and Branding Identity Service Packages at the lowest costs.</p>
+            </div>
+        
+            <div class="max-w-[550px] md:max-w-full h-full pb-12 bg-white shadow-xl rounded-[20px] lg:mx-auto mx-4">
+                <div class="flex flex-row flex-wrap justify-center">
+                    <div class="h-[371px] md:w-[400px] w-[600px] rounded-b-[20px] text-center items-center justify-center flex flex-col p-12">
+                        <h1 class="text-[32px] font-bold text-[#008FFF]">HiBronze</h1>
+                        <h2 class="text-[36px] font-bold text-center">IDR 1,500,000</h2>
+                        <p class="text-[16px] mb-8">/ Month</p>
+                        <button class="m-2 w-full h-[44px] btn-white border border-blue-500 shadow-3xl rounded-full text-[#008FFF] shadow-blue-400">Get Started Now</button>
+                    </div>
+                    <div class="h-[371px] md:w-[400px] w-[600px] rounded-b-[20px] bg-[#008FFF] text-center items-center justify-center flex flex-col p-12 text-white">
+                        <h1 class="text-[32px] font-bold">HiSilver</h1>
+                        <h2 class="text-[36px] font-bold text-center">IDR 1,500,000</h2>
+                        <p class="text-[16px] mb-8">/ Month</p>
+                        <button class="m-2 w-full h-[44px] btn-white bg-[#EDC700] shadow-3xl rounded-full text-black shadow-blue-400">Get Started Now</button>
+                    </div>
+                    <div class="h-[371px] md:w-[400px] w-[600px] rounded-b-[20px] text-center items-center justify-center flex flex-col p-12">
+                        <h1 class="text-[32px] font-bold text-[#008FFF]">HiGold</h1>
+                        <h2 class="text-[36px] font-bold text-center">IDR 1,500,000</h2>
+                        <p class="text-[16px] mb-8">/ Month</p>
+                        <button class="m-2 w-full h-[44px] btn-white border border-blue-500 shadow-3xl rounded-full text-[#008FFF] shadow-blue-400">Get Started Now</button>
+                    </div>
+                </div>
+        
+                <div class="w-full h-[460px] mt-10 px-12 pt-12 hidden lg:table">
+                    <div class="table-header-group mb-12">
+                        <div class="table-row font-bold">
+                            <div class="table-cell text-left w-[500px] m-12 text-[28px]">Benefits</div>
+                            <div class="table-cell text-center text-[28px]">HiBronze</div>
+                            <div class="table-cell text-center text-[28px]">HiSilver</div>
+                            <div class="table-cell text-center text-[28px]">HiGold</div>
+                        </div>
+                    </div>
+        
+                    <div class="h-5"></div>
+        
+                    <div class="table-row-group font-medium m-2 ">
+                        <div class="table-row">
+                            <div class="table-cell text-2xl">Content Feed And Story</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">30</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">60</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">90</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell text-2xl">Reels & Tiktok Videos</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">30</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">60</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">90</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell text-2xl">Dashboard Content</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">30</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">60</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">90</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell text-2xl">Copywriting & Hashtag</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">30</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">60</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">90</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell text-2xl">Monthly Report & Consultation</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">30</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">60</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">90</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell text-2xl">Boost Marketing Advertisement</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">30</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">60</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">90</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell text-2xl">Free Company Website / Personal</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">30</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">60</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">90</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell text-2xl">Digital Marketing Learning Video</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">30</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">60</div>
+                            <div class="table-cell text-center text-2xl text-[#008FFF] border-b-2 border-b-blue-100">90</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Design Price -->
+
+        <!-- Testi -->
+        <section class="bg-[#008FFF] h-full w-full pb-10 px-4 lg:px-0 font-plus-jakarta-sans">
+            <div class="mx-auto pt-16 max-w-[1230px] flex justify-center xl:justify-start">
+                <h1 class="lg:text-[50px] text-[42px] font-bold text-white"><span class="text-[#002B44] border-b-4 pb-2">What</span> Client Say</h1>
+            </div>
+            <div class="my-12 flex flex-row flex-wrap gap-10 justify-center items-center max-w-[1230px] mx-auto">
+                <div class="xl:w-[350px] xl:h-[258px] w-[435px] h-full rounded-[20px] bg-white shadow-lg flex flex-col items-center p-4">
+                    <div class="w-[280px] h-[108px] xl:w-[284px] xl:h-[80px] mt-4 rounded-[20px] p-4 bg-[#008FFF] flex flex-row items-center text-white lg:ml-4">
+                        <img class="border-8 border-white rounded-full lg:-ml-12 -ml-10 h-28" src="./../../assets/img/testi-profil.png" alt="" />
+                        <div class="flex flex-col w-full pl-4 -mt-2">
+                            <h1 class="text-[30px] xl:text-[25px] font-bold">John</h1>
+                            <h2 class="text-[18px] xl:text-[14px] font-thin">CEO, XYZ Company</h2>
+                        </div>
+                    </div>
+                    <div class="mt-6 p-2 text-[16px] xl:text-[16px]">
+                        <p>Working with HiSocial was a game-changer for our brand. Their logo design and branding strategy catapulted our business to new heights.</p>
+                    </div>
+                </div>
+                <div class="w-[435px] h-full xl:h-[320px] rounded-[20px] bg-white shadow-lg flex flex-col items-center p-4">
+                    <div class="w-[280px] h-[108px] xl:w-[330px] xl:h-[108px] mt-4 rounded-[20px] p-4 bg-[#008FFF] flex flex-row items-center text-white">
+                        <img class="border-8 border-white rounded-full -ml-10 xl:h-36 h-28" src="./../../assets/img/testi-profil.png" alt="" />
+                        <div class="flex flex-col w-full pl-4 -mt-2">
+                            <h1 class="text-[30px] font-bold">John</h1>
+                            <h2 class="text-[18px] font-thin">CEO, XYZ Company</h2>
+                        </div>
+                    </div>
+                    <div class="mt-6 p-2 text-[16px] lg:text-[20px] font-normal">
+                        <p>Working with HiSocial was a game-changer for our brand. Their logo design and branding strategy catapulted our business to new heights.</p>
+                    </div>
+                </div>
+                <div class="xl:w-[350px] xl:h-[258px] w-[435px] h-full rounded-[20px] bg-white shadow-lg flex flex-col items-center p-4">
+                    <div class="w-[280px] h-[108px] xl:w-[284px] xl:h-[80px] mt-4 rounded-[20px] p-4 bg-[#008FFF] flex flex-row items-center text-white lg:ml-4">
+                        <img class="border-8 border-white rounded-full lg:-ml-12 -ml-10 h-28" src="./../../assets/img/testi-profil.png" alt="" />
+                        <div class="flex flex-col w-full pl-4 -mt-2">
+                            <h1 class="text-[30px] xl:text-[25px] font-bold">John</h1>
+                            <h2 class="text-[18px] xl:text-[14px] font-thin">CEO, XYZ Company</h2>
+                        </div>
+                    </div>
+                    <div class="mt-6 p-2 text-[16px] xl:text-[16px]">
+                        <p>Working with HiSocial was a game-changer for our brand. Their logo design and branding strategy catapulted our business to new heights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testi -->
+
+        <!-- Transform -->
+        <section class="h-full mt-28 max-w-[1230px] mx-auto px-4 font-plus-jakarta-sans">
+            <div class="h-full text-center max-w-full mx-auto">
+                <h1 class="lg:text-[48px] text-[32px] text-[#002B44] font-semibold">Ready To Transform Your Brand?</h1>
+                <p class="max-w-lg md:max-w-3xl xl:max-w-4xl mx-auto leading-loose font-normal mt-2 lg:text-[20px] text-[16px]">Unlock the potential of your brand with HiSocial. Let's collaborate and create a brand identity that leaves a lasting impact. Contact us today to get started.</p>
+                <button class="lg:mt-12 mt-6 w-[263px] h-[61px] bg-blue-500 hover:bg-blue-600 text-white shadow-3xl rounded-full shadow-blue-400 text-[20px]">Get Started</button>
+            </div>
+        </section>
+        <!-- End Transform -->
+
+        <!-- Footer -->
+        <section class="px-4 mt-24 mb-12 font-plus-jakarta-sans">
+            <div class="w-full h-full max-w-[1230px] mx-auto">
+                <div class="w-full bg-[#2563EB] text-white h-full rounded-[20px] pt-8 pb-12 flex flex-col items-center justify-center flex-wrap">
+                    <h1 class="text-[32px] lg:text-[42px] font-semibold text-center">Subscribe to our newsletter</h1>
+                    <div class="flex lg:flex-row flex-col mt-8 gap-4 flex-wrap">
+                        <input type="text" class="rounded-[9px] w-[246px] h-[54px] bg-transparent border border-white placeholder:text-white placeholder:pl-4" placeholder="First name"/>
+                        <input type="text" class="rounded-[9px] w-[246px] h-[54px] bg-transparent border border-white placeholder:text-white placeholder:pl-4" placeholder="Email address"/>
+                        <button class="lg:w-[263px] h-[54px] bg-black shadow-3xl rounded-[9px] shadow-blue-400 text-[20px] hover:bg-slate-700">Subscribe Now</button>
+                    </div>
+                </div>
+        
+                <div class="w-full h-full flex flex-col lg:flex-row mt-12 pb-10 border-b-2">
+                    <div class="h-full w-full">
+                        <div class="flex flex-col">
+                            <div class="w-[400px] h-full">
+                                <img src="./../../assets/img/logo1.png" alt="" />
+                                <h1 class="text-[18px] font-normal mt-12">HiSocial Digital gives you ease in learning and improving your skills to become a professional.</h1>
+                            </div>
+                            <div class="flex mt-12 gap-2">
+                                <div class="w-[40px] h-[40px] border border-black rounded-full"></div>
+                                <div class="w-[40px] h-[40px] bg-[#2563EB] rounded-full"></div>
+                                <div class="w-[40px] h-[40px] border border-black rounded-full"></div>
+                                <div class="w-[40px] h-[40px] border border-black rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-full w-full mx-auto flex flex-col my-4 lg:my-0">
+                        <div class="flex flex-row">
+                            <div class="w-full h-full lg:-mr-9">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold mb-8">COMPANY</h1>
+                                <div class="font-normal lg:text-[18px] text-[16px]">
+                                    <p class="py-1">About</p>
+                                    <p class="py-1">Features</p>
+                                    <p class="py-1">Works</p>
+                                    <p class="py-1">Career</p>
+                                </div>
+                            </div>
+                            <div class="w-full h-full">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold mb-8">HELP</h1>
+                                <div class="font-normal lg:text-[18px] text-[16px]">
+                                    <p class="py-1">Customer Support</p>
+                                    <p class="py-1">Delivery Details</p>
+                                    <p class="py-1">Terms & Conditions</p>
+                                    <p class="py-1">Privacy Policy</p>
+                                </div>
+                            </div>
+                            <div class="w-full h-full">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold mb-8">RESOURCE</h1>
+                                <div class="font-normal lg:text-[18px] text-[16px]">
+                                    <p class="py-1">Free Ebooks</p>
+                                    <p class="py-1">Development Tutorial</p>
+                                    <p class="py-1">How To - Blog</p>
+                                    <p class="py-1">Youtube Playlist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="mt-4 flex justify-center font-normal text-[12px] lg:text-[16px]">
+                    <h1>© 2022 HISOCIAL DIGITAL, ALL RIGHTS RESERVED DOWNED BY PT TALENTA SINERGI GROUP</h1>
+                </div>
+            </div>
+        </section>
+        
+        <!-- End Footer -->
+
+    </div>
+    <script src="index.js"></script>
 </body>
+
 </html>
