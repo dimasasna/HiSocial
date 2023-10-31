@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            extend: {
+                fontFamily: {
+                    "plus-jakarta-sans": "Cabinet Grotesk",
+                    "inter": "Inter",
+                },
+                dropShadow: {
+                    navbar: '0px 5px 20px rgba(0, 0, 0, 0.17)',
+                    card: '-5px 6px 22px rgba(0, 0, 0, 0.25)'
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer base {
+            h1,h2,h3,h4,h5,h6 {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-weight: 700;
+            }
+            p, a, span, li { font-family: 'Inter', sans-serif; }
+            button {font-weight: 700;}
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="w-full fixed top-0 h-auto px-6 lg:px-32 xl:px-0 bg-white  z-[999999]  shadow-xl">
+            <div class="flex items-center  justify-between max-w-[1220px]  h-[74px] lg:h-20  mx-auto  ">
+                <img src="./assets/img/logo.png" class="cursor-pointer h-11 lg:h-12 xl:h-14" alt="logo hi-social">
+                <ul class="hidden lg:flex items-center space-x-7 xl:space-x-10 text-[18px]">
+                    <li class="hover:text-gray-400">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="">Service</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="">Portofolio</a>
+                    </li>
+                    <li class="hover:text-gray-400">
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button
+                                class="bg-blue-500 px-4 py-2 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                                Us</button>
+                        </a>
+                    </li>
+                </ul>
+                <button class="menu-btn lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div
+            class="nav-menu fixed w-screen h-[250px] lg:hidden left-0 right-0 -top-[100vh] px-6 py-4 bg-white z-40 opacity-40 transition-all duration-700 shadow-2xl">
+            <ul class="font-normal space-y-2">
+                <li class="pb-2  hover:text-gray-400   hover:border-b-gray-300">
+                    <a href="">Home</a>
+                </li>
+                <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                    <a href="">Service</a>
+                </li>
+                <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                    <a href="">Portofolio</a>
+                </li>
+                <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                    <a href="">About Us</a>
+                </li>
+                <li class="pt-2">
+                    <a href="#">
+                        <button
+                            class="bg-blue-500 w-full lg:w-auto px-4 py-2 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                            Us</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="max-w-[1920px] sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-[1920px] mx-auto">
+
+        <!-- Banner -->
+        <section class=" lg:mt-16 relative flex flex-col items-center font-plus-jakarta-sans sm:w-full px-6">
+            <div class="relative z-20 flex flex-row mt-[80px] gap-5 max-w-[1215px] mx-auto mb-10">
+                <div class="w-full h-full">
+                    <h1 class="text-[30px] leading-tight font-semibold text-[#001D33] lg:text-[55px] ">Keep Growing With
+                        Forward Thinking With Us.</h1>
+                    <p class="leading-relaxed mt-4 text-[16px] lg:text-[18px]">We Are HiSocial Digital, a digital
+                        marketing
+                        and Creative design company based in Yogyakarta, Indonesia. Let's create the best product
+                        experience
+                        with our experienced members.<br><br>Helping you manage your marketing budget more effectively.
+                        We
+                        can tailor a marketing plan to suit your budget and ensure efficient use of funds.</p>
+                    <button
+                        class="text-white mt-10 bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-[20px] shadow-blue-400 w-full h-[50px] lg:h-14 lg:w-[263px] ">Get
+                        Started</button>
+
+                </div>
+                <div class="max-h-full w-full ml-10 hidden lg:block">
+                    <img class="object-cover" src="/assets/img/home-banner.png" alt="" />
+                    <div
+                        class="bg-[#008FFF] w-full mt-2 rounded-[10px] text-white p-5 flex flex-row flex-wrap justify-between text-center tracking-tight">
+                        <div>
+                            <h1 class="text-[50px]">15+</h1>
+                            <p>Succesfull Project</p>
+                        </div>
+                        <div>
+                            <h1 class="text-[50px]">05+</h1>
+                            <p>Super Happy Client</p>
+                        </div>
+                        <div>
+                            <h1 class="text-[50px]">02+</h1>
+                            <p>Year of Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- Experience Stories -->
+        <section class="flex flex-row gap-24 my-12 max-w-[1215px] mx-auto">
+            <div class="">
+                <h1 class="mb-3  text-2xl font-medium md:text-3xl lg:mb-12 lg:text-5xl">We Create Impactful Experience
+                    Stories</h1>
+                <div class="flex flex-row gap-8 mx-1 my-8">
+                    <img class="w-24 h-auto" src="assets/icons/shape1.svg" alt="">
+                    <div>
+                        <h1 class="text-[24px]">Strategi Marketing</h1>
+                        <p class="mt-2 leading-relaxed -tracking-tight">Custom digital marketing and creative strategies
+                            informed by strong judgment & your business deserves to get better than prepackaged
+                            strategies </p>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-8 mx-1 my-8">
+                    <img class="w-24 h-auto" src="assets/icons/shape2.svg" alt="">
+                    <div>
+                        <h1 class="text-[24px]">Branding Identity</h1>
+                        <p class="mt-2 leading-relaxed -tracking-tight">See the progress we're making & what's driving
+                            results, at any time, we keep you informed transparently on a consistent basis and keep you
+                            updated.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-8 mx-1 my-8">
+                    <img class="w-24 h-auto" src="assets/icons/shape3.svg" alt="">
+                    <div>
+                        <h1 class="text-[24px]">Breaktrough</h1>
+                        <p class="mt-2 leading-relaxed -tracking-tight">Services that match your greatest ROI, moving in
+                            the same direction towards growth goals better than ever. And deliver modern, tangible
+                            breakthroughs.</p>
+                    </div>
+                </div>
+            </div>
+            <img class="hidden md:block " src="assets/img/ourwork.png" />
+        </section>
+        <!-- End Experience Stories -->
+
+        <!-- Several Service -->
+        <section class="max-w-[1215px] mx-auto my-20">
+            <div class="flex flex-row justify-end gap-10">
+                <h1 class="text-[50px] w-[50%] leading-none font-medium">We Offer Several Service For You</h1>
+                <p class="w-[50%] flex items-center text-[18px]">We have outstanding experience across a wide range of
+                    sectors with work spanning geography, scale and scope. No challenge is too big or messy, familiar or
+                    unfamiliar, vast or special.</p>
+            </div>
+            <div class="flex flex-row justify-between mt-14 gap-10">
+                <img class="w-50%" src="assets/img/several-service.png" alt="">
+                <div class="w-[50%] ">
+                    <div
+                        class="w-full h-auto flex flex-row justify-start items-center gap-6 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 mb-4 rounded-[15px]">
+                        <div
+                            class="bg-[#008FFF] rounded-full h-[68px] w-[68px] flex items-center justify-center text-white">
+                            <h1 class="text-center text-[24px]">01.</h1>
+                        </div>
+                        <h1 class="text-[30px] text-[#012A42]">Social Media Management</h1>
+                    </div>
+                    <div
+                        class="w-full h-auto flex flex-row justify-start items-center gap-6 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 mb-4 rounded-[15px]">
+                        <div
+                            class="bg-[#008FFF] rounded-full h-[68px] w-[68px] flex items-center justify-center text-white">
+                            <h1 class="text-center text-[24px]">02.</h1>
+                        </div>
+                        <h1 class="text-[30px] text-[#012A42]">Branding Indentity Visual</h1>
+                    </div>
+                    <div
+                        class="w-full h-auto flex flex-row justify-start items-center gap-6 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 mb-4 rounded-[15px]">
+                        <div
+                            class="bg-[#008FFF] rounded-full h-[68px] w-[68px] flex items-center justify-center text-white">
+                            <h1 class="text-center text-[24px]">03.</h1>
+                        </div>
+                        <h1 class="text-[30px] text-[#012A42]">Logo & Branding Identity</h1>
+                    </div>
+                    <div
+                        class="w-full h-auto flex flex-row justify-start items-center gap-6 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4 mb-4 rounded-[15px]">
+                        <div
+                            class="bg-[#008FFF] rounded-full h-[68px] w-[68px] flex items-center justify-center text-white">
+                            <h1 class="text-center text-[24px]">04.</h1>
+                        </div>
+                        <h1 class="text-[30px] text-[#012A42]">Website & System</h1>
+                    </div>
+                    <div
+                        class="w-full h-auto flex flex-row justify-start items-center gap-6 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-4  rounded-[15px]">
+                        <div
+                            class="bg-[#008FFF] rounded-full h-[68px] w-[68px] flex items-center justify-center text-white">
+                            <h1 class="text-center text-[24px]">05.</h1>
+                        </div>
+                        <h1 class="text-[30px] text-[#012A42]">Digital Marketing Strategy</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Several Service -->
+
+        <!-- Other Service -->
+        <section class="max-w-[1215px] h-full mx-auto mt-32">
+            <div class="flex justify-center flex-col items-center">
+                <h1 class="text-[50px] text-center leading-none font-medium">Other Services That We've Made</h1>
+                <p class="mt-8 text-[20px] text-center w-[75%]">We have extensive experience across a wide range of
+                    sectors with other work, including cashier systems and digital marketing learning.</p>
+            </div>
+            <div class="flex flex-row flex-wrap mt-6 justify-center">
+                <div class="w-[50%] relative ">
+                    <img class="w-full" src="assets/img/other-service-1.png" alt="">
+                    <div
+                        class="relative flex bg-white  p-4 justify-between w-[409px] mx-auto h-[51px] items-center rounded-full bottom-24">
+                        <h1 class="text-[18px] font-semibold">Sistem Toko (SISKO)</h1>
+                        <button class="bg-[#008FFF] hover:bg-blue-600 px-4 py-1 rounded-full text-white">Learn
+                            More</button>
+                    </div>
+                </div>
+                <div class="w-[50%] relative ">
+                    <img class="w-full" src="assets/img/other-service-2.png" alt="">
+                    <div
+                        class="relative flex bg-white p-4 justify-between w-[409px] mx-auto h-[51px] items-center rounded-full bottom-24">
+                        <h1 class="text-[18px] font-semibold">Online Course (Eduwork)</h1>
+                        <button class="bg-[#008FFF] hover:bg-blue-600 px-4 py-1 rounded-full text-white">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Other Service -->
+
+        <!-- Project -->
+        <section class="max-w-[1215px] h-full mx-auto mb-20 mt-12">
+            <div class="flex justify-between px-2 items-center">
+                <h1 class="text-[50px] text-[#012840] leading-none font-medium">Our Project Have Done</h1>
+                <button
+                    class="bg-[#008FFF] hover:bg-blue-600 text-white px-12 rounded-full text-[18px] h-[52px]">Explore
+                    More +</button>
+            </div>
+            <div class="flex flex-row mt-16 gap-0">
+                <div class="w-[55%]"><img class="w-full object-cover" src="assets/img/home-project1.png" alt=""></div>
+                <div class="w-[45%] bg-[#012840] p-10 text-white">
+                    <h1 class="text-[34px]">Puma Indonesia</h1>
+                    <p class="text-[18px] leading-loose tracking-wide mt-4">Maximize Your Sport Performance & Stay
+                        Stylish w/ PUMA's Latest Collection. Free Shipping. Shop High Quality Shoes, Sports Gear &
+                        Accessories @PUMA Indonesia Official Online Store. </p>
+                </div>
+            </div>
+            <div class="flex flex-row mt-6 gap-0">
+                <div class="w-[45%] bg-[#012840] p-10 text-white">
+                    <h1 class="text-[34px]">Fruit & Saladies</h1>
+                    <p class="text-[18px] leading-loose tracking-wide mt-4">In common language usage, fruit normally
+                        means the seed-associated fleshy structures (or produce) of plants that typically are sweet or
+                        sour and edible in the raw state, such as apples, bananas, grapes, lemons, oranges, and
+                        strawberries</p>
+                </div>
+                <div class="w-[55%]"><img class="w-full" src="assets/img/home-project2.png" alt=""></div>
+            </div>
+            <div class="flex flex-row mt-6 gap-0">
+                <div class="w-[55%]"><img class="w-full" src="assets/img/home-project3.png" alt=""></div>
+                <div class="w-[45%] bg-[#012840] p-10 text-white">
+                    <h1 class="text-[34px]">Beauty & Health</h1>
+                    <p class="text-[18px] leading-loose tracking-wide mt-4">Natural Moisturizing Factors + Beta Glucan
+                        is a lightweight gel moisturizer designed to provide all-day hydration after just one
+                        application.* It is formulated with natural moisturizing factors,</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Project -->
+
+        <!-- Testimonial slider -->
+        <section class="max-w-[1215px] h-full mx-auto mb-20">
+            <div class="flex justify-center items-center pt-12">
+                <h1 class="text-[36px]  leading-none font-medium">What's the review from them about the <span
+                        class="text-[#008FFF]">HiSocial Digital</span>?</h1>
+            </div>
+            <div class="flex flex-row justify-between mt-12 swiper">
+                <div class="swiper-wrapper py-4 w-full h-full">
+                    <div
+                        class="w-full h-full rounded-[20px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex justify-start items-start swiper-slide">
+                        <img src="assets/img/testi-profil1.png" alt="">
+                        <div class="p-6">
+                            <img src="assets/icons/kutip.svg" alt="">
+                            <p class="font-thin mt-4">Increase sales, can reach a wider market area. from studying
+                                advertising until the content is told so you understand better how to take care of the
+                                brand 🫶🏻</p>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full h-full rounded-[20px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex justify-start items-start swiper-slide">
+                        <img src="assets/img/testi-profil2.png" alt="">
+                        <div class="p-6">
+                            <img src="assets/icons/kutip.svg" alt="">
+                            <p class="font-thin mt-4">Increasing sales with an even wider market area, we get learning
+                                about what advertising and the Indonesian market are like.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full h-full rounded-[20px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex justify-start items-start swiper-slide">
+                        <img src="assets/img/testi-profil1.png" alt="">
+                        <div class="p-6">
+                            <img src="assets/icons/kutip.svg" alt="">
+                            <p class="font-thin mt-4">Increase sales, can reach a wider market area. from studying
+                                advertising until the content is told so you understand better how to take care of the
+                                brand 🫶🏻</p>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full h-full rounded-[20px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex justify-start items-start swiper-slide">
+                        <img src="assets/img/testi-profil2.png" alt="">
+                        <div class="p-6">
+                            <img src="assets/icons/kutip.svg" alt="">
+                            <p class="font-thin mt-4">Increasing sales with an even wider market area, we get learning
+                                about what advertising and the Indonesian market are like.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next rounded-full "></div>
+                <div class="swiper-button-prev rounded-full "></div>
+            </div>
+        </section>
+        <!-- End Testimonial slider -->
+
+        <!-- Price Plan -->
+        <section class="max-w-[1215px] h-full mx-auto mb-20">
+            <div class="flex flex-col justify-center items-center pt-4">
+                <h1 class="text-[50px] text-[#008FFF] leading-none font-medium">Pricing & Plan for Everyone</h1>
+                <p class="mt-8 text-[20px] text-center w-[75%]">You can choose a package that suits your social media management needs, or you can contact them for other related services.</p>
+            </div>
+            <div class="flex flex-row justify-between items-center mt-12 gap-4">
+                <div class="w-full h-full shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-6 rounded-[20px]">
+                    <h1 class="text-[28px] my-4">HiBronze</h1>
+                    <p class="text-[16px] my-4">The HiBronze package includes several benefits that you will get.</p>
+                    <h1 class="text-[36px] my-4">IDR. 1.500.000 <span class="text-[16px] font-thin">/Month</span></h1>
+                    <button class="w-full h-[44px] outline outline-[#008FFF] hover:bg-slate-200 rounded-[36px] text-[#008FFF] my-4">Get Started Now</button>
+                    <div class="mt-8 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>40 Desain Konten, 24 Feed & 16 Story</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>4 Video Reels / TikTok Video</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Dashboard Content</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Copy Writing & Hastag</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Monthly Report & Konsultasi</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Boost Iklan Marketing</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Free Website Toko / Personal</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Video Leaning Digital Marketing </p>
+                    </div>
+                </div>
+                <div class="w-full h-full shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-6 rounded-[20px]">
+                    <h1 class="text-[28px] my-4">HiSilver</h1>
+                    <p class="text-[16px] my-4">The HiSilver package includes several benefits that you will get.</p>
+                    <h1 class="text-[36px] my-4">IDR. 2.500.000 <span class="text-[16px] font-thin">/Month</span></h1>
+                    <button class="w-full h-[44px] outline outline-[#008FFF] hover:bg-slate-200 rounded-[36px] text-[#008FFF] my-4">Get Started Now</button>
+                    <div class="mt-8 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>80 Desain Konten, 40 Feed & 40 Story</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>8 Video Reels / TikTok Video</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Dashboard Content</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Copy Writing & Hastag</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Monthly Report & Konsultasi</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Boost Iklan Marketing</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Free Website Toko / Personal</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Video Leaning Digital Marketing </p>
+                    </div>
+                </div>
+                <div class="w-full h-full shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-6 rounded-[20px]">
+                    <h1 class="text-[28px] my-4">HiGold</h1>
+                    <p class="text-[16px] my-4">The HiGold package includes several benefits that you will get.</p>
+                    <h1 class="text-[36px] my-4">IDR. 4.000.000 <span class="text-[16px] font-thin">/Month</span></h1>
+                    <button class="w-full h-[44px] outline outline-[#008FFF] hover:bg-slate-200 rounded-[36px] text-[#008FFF] my-4">Get Started Now</button>
+                    <div class="mt-8 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>120 Desain Konten, 60 Feed & 60 Story</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>12 Video Reels / TikTok Video</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Dashboard Content</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Copy Writing & Hastag</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Monthly Report & Konsultasi</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Boost Iklan Marketing</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Free Website Toko / Personal</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-start gap-4">
+                        <img src="assets/icons/ceklist.svg" alt="">
+                        <p>Video Leaning Digital Marketing </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Price Plan -->
+
+        <!-- Our Partner -->
+        <section class="max-w-[1215px] h-full mx-auto mb-20">
+            <div class="flex flex-row justify-between items-center">
+                <div>
+                    <h1 class="text-[50px] text-[#0088FF]">Our Partner</h1>
+                    <p class="text-[24px] w-[60%]">We Have Collaborated With Companies And Educational Agencies.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <img src="assets/img/eduwork.png" alt="">
+                    <img src="assets/img/elvron.png" alt="">
+                    <img src="assets/img/upscale.png" alt="">
+                    <img src="assets/img/sisko.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- End Our Partner -->
+
+        <!-- Footer -->
+        <footer class="px-4 lg:mt-20 mt-10 mb-12 font-plus-jakarta-sans">
+            <div class="w-full h-full max-w-[1215px] mx-auto">
+                <div
+                    class="w-full bg-[#2563EB] text-white h-full rounded-[20px] pt-8 pb-12 flex flex-col items-center justify-center flex-wrap relative overflow-hidden">
+                    <h1 class="text-[26px] lg:text-[42px] font-semibold text-center relative">Subscribe to our
+                        newsletter</h1>
+                    <div class="flex lg:flex-row flex-col mt-8 gap-4 flex-wrap relative">
+                        <input type="text"
+                            class="rounded-[9px] w-[246px] h-[54px] bg-transparent border border-white placeholder:text-white p-4"
+                            placeholder="First name" />
+                        <input type="text"
+                            class="rounded-[9px] w-[246px] h-[54px] bg-transparent border border-white placeholder:text-white p-4"
+                            placeholder="Email address" />
+                        <button
+                            class="lg:w-[263px] h-[54px] bg-black shadow-3xl rounded-[9px] shadow-blue-400 text-[20px] hover:bg-slate-700">Subscribe
+                            Now</button>
+                    </div>
+                    <div
+                        class="absolute -bottom-[160px] lg:-bottom-[140px] -right-[116px] w-[253px] h-[206px] border-[6px] border-white rounded-[50%]">
+                    </div>
+                    <div
+                        class="absolute -top-[140px] -left-[116px] w-[253px] h-[206px] border-[6px] opacity-40 border-white rounded-[50%] ">
+                    </div>
+                </div>
+
+                <div class="w-full h-full flex flex-col lg:flex-row mt-12 pb-10 border-b-2">
+                    <div class="h-full w-full">
+                        <div class="flex flex-col">
+                            <div class="lg:w-[400px] w-full h-full">
+                                <img class="w-[300px]" src="./assets/img/logo1.png" alt="" />
+                                <h1 class="lg:text-[18px] font-normal mt-7">HiSocial Digital gives you ease in learning
+                                    and improving your skills to become a professional.</h1>
+                            </div>
+                            <div class="flex justify-normal gap-4 w-full mt-8">
+                                <div
+                                    class="group flex justify-center items-center h-11 w-11 hover:bg-[#2563EB] rounded-full">
+                                    <img class="text-white" src="./assets/icons/1.svg" alt="logo twitter" />
+                                </div>
+                                <div
+                                    class="group flex justify-center items-center h-11 w-11 hover:bg-[#2563EB]  rounded-full">
+                                    <img class="text-white" src="./assets/icons/2.svg" alt="logo facebook" />
+                                </div>
+                                <div
+                                    class="group flex justify-center items-center h-11 w-11 hover:bg-[#2563EB]  rounded-full">
+                                    <img class="text-white" src="./assets/icons/3.svg" alt="logo instagram" />
+                                </div>
+                                <div
+                                    class="group flex justify-center items-center h-11 w-11 hover:bg-[#2563EB]  rounded-full">
+                                    <img class="text-white" src="./assets/icons/4.svg" alt="logo github" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-full w-full mx-auto flex flex-col mt-10 lg:my-0">
+                        <div class="flex flex-row">
+                            <div class="w-full h-full lg:-mr-9 ">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-8">COMPANY</h1>
+                                <div class="font-normal lg:text-[18px] text-[14px]">
+                                    <p class="py-1">About</p>
+                                    <p class="py-1">Features</p>
+                                    <p class="py-1">Works</p>
+                                    <p class="py-1">Career</p>
+                                </div>
+                            </div>
+                            <div class="w-full h-full mx-2">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-8">HELP</h1>
+                                <div class="font-normal lg:text-[18px] text-[14px]">
+                                    <p class="py-1">Customer Support</p>
+                                    <p class="py-1">Delivery Details</p>
+                                    <p class="py-1">Terms & Conditions</p>
+                                    <p class="py-1">Privacy Policy</p>
+                                </div>
+                            </div>
+                            <div class="w-full h-full">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-8">RESOURCE
+                                </h1>
+                                <div class="font-normal lg:text-[18px] text-[14px]">
+                                    <p class="py-1">Free Ebooks</p>
+                                    <p class="py-1">Development Tutorial</p>
+                                    <p class="py-1">How To - Blog</p>
+                                    <p class="py-1">Youtube Playlist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex justify-center items-center text-center font-light text-[12px] lg:text-[16px]">
+                    <p>© 2022 HISOCIAL DIGITAL, ALL RIGHTS RESERVED DOWNED BY PT TALENTA SINERGI GROUP</p>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 50,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                767: {
+                    slidesPerView: 2
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>
