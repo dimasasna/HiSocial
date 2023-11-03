@@ -15,8 +15,12 @@
         tailwind.config = {
             extend: {
                 fontFamily: {
-                    "plus-jakarta-sans": "Cabinet Grotesk",
+                    "plus-jakarta-sans": "Plus Jakarta Sans",
                     "inter": "Inter",
+                    "CabinetGrotesk-Regular": "CabinetGrotesk-Regular",
+                    "CabinetGrotesk-Medium": "CabinetGrotesk-Medium",
+                    "CabinetGrotesk-Bold": "CabinetGrotesk-Bold",
+                    "CabinetGrotesk-Extrabold": "CabinetGrotesk-Extrabold",
                 },
                 dropShadow: {
                     navbar: '0px 5px 20px rgba(0, 0, 0, 0.17)',
@@ -29,12 +33,48 @@
     <style type="text/tailwindcss">
         @layer base {
             h1,h2,h3,h4,h5,h6 {
-                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-family: 'CabinetGrotesk-ExtraBold';
                 font-weight: 700;
             }
-            p, a, span, li { font-family: 'Inter', sans-serif; }
+            p, a,  li { font-family: 'Inter', sans-serif; }
             button {font-weight: 700;}
         }
+        @font-face {
+                font-family: 'CabinetGrotesk-Regular';
+                src: url('./fonts/CabinetGrotesk-Regular.woff2') format('woff2'),
+                url('./fonts/CabinetGrotesk-Regular.woff') format('woff'),
+                url('./fonts/CabinetGrotesk-Regular.ttf') format('truetype');
+                font-weight: 400;
+                font-display: swap;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'CabinetGrotesk-Medium';
+                src: url('./fonts/CabinetGrotesk-Medium.woff2') format('woff2'),
+                url('./fonts/CabinetGrotesk-Medium.woff') format('woff'),
+                url('./fonts/CabinetGrotesk-Medium.ttf') format('truetype');
+                font-weight: 500;
+                font-display: swap;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'CabinetGrotesk-Bold';
+                src: url('./fonts/CabinetGrotesk-Bold.woff2') format('woff2'),
+                url('./fonts/CabinetGrotesk-Bold.woff') format('woff'),
+                url('./fonts/CabinetGrotesk-Bold.ttf') format('truetype');
+                font-weight: 700;
+                font-display: swap;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'CabinetGrotesk-Extrabold';
+                src: url('./fonts/CabinetGrotesk-Extrabold.woff2') format('woff2'),
+                url('./fonts/CabinetGrotesk-Extrabold.woff') format('woff'),
+                url('./fonts/CabinetGrotesk-Extrabold.ttf') format('truetype');
+                font-weight: 800;
+                font-display: swap;
+                font-style: normal;
+            }
     </style>
 </head>
 
@@ -61,7 +101,7 @@
                     <li>
                         <a href="">
                             <button
-                                class="bg-blue-500 font-thin px-4 py-2 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                                class="bg-blue-500 font-thin px-4 py-1 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
                                 Us</button>
                         </a>
                     </li>
@@ -163,8 +203,8 @@
                             <p class="flex text-[16px] lg:text-[20px] items-center font-semibold">Custom Visual Identity
                             </p>
                             <button
-                                class="text-[12px] flex flex-row items-center justify-between px-4 md:text-[16px] md:w-[158px] h-[40px] text-white bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-full shadow-blue-400">Learn
-                                More <img class="pl-4 pr-2" src="assets/icons/arrow.svg" alt=""> </button>
+                                class="text-[12px] flex flex-row items-center justify-between px-2 lg:px-4 md:text-[16px] md:w-[158px] h-[30px] lg:h-[40px] text-white bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-full shadow-blue-400">Learn
+                                More <img class="pl-4 lg:pr-2" src="assets/icons/arrow.svg" alt=""> </button>
                         </div>
                         <div class="p-6">
                             <p class="leading-7 text-[15px] lg:text-[18px]">We craft unique visual elements, from logos
@@ -177,8 +217,8 @@
                             <p class="flex text-[16px] lg:text-[20px] items-center font-semibold">Eye-Catching Graphics
                             </p>
                             <button
-                                class="text-[12px] flex flex-row items-center justify-between px-4 md:text-[16px] md:w-[158px] h-[40px] text-white bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-full shadow-blue-400">Learn
-                                More <img class="pl-4 pr-2" src="assets/icons/arrow.svg" alt=""> </button>
+                                class="text-[12px] flex flex-row items-center justify-between px-2 lg:px-4 md:text-[16px] md:w-[158px] h-[30px] lg:h-[40px] text-white bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-full shadow-blue-400">Learn
+                                More <img class="pl-4 lg:pr-2" src="assets/icons/arrow.svg" alt=""> </button>
                         </div>
                         <div class="p-6">
                             <p class="leading-7 text-[16px] lg:text-[18px]">Our team of talented designers will create
@@ -190,8 +230,8 @@
                             <p class="flex text-[16px] lg:text-[20px] items-center font-semibold">Brand Transformation
                             </p>
                             <button
-                                class="text-[12px] flex flex-row items-center justify-between px-4 md:text-[16px] md:w-[158px] h-[40px] text-white bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-full shadow-blue-400">Learn
-                                More <img class="pl-4 pr-2" src="assets/icons/arrow.svg" alt=""> </button>
+                                class="text-[12px] flex flex-row items-center justify-between px-2 lg:px-4 md:text-[16px] md:w-[158px] h-[30px] lg:h-[40px] text-white bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-full shadow-blue-400">Learn
+                                More <img class="pl-4 lg:pr-2" src="assets/icons/arrow.svg" alt=""> </button>
                         </div>
                         <div class="p-6">
                             <p class="leading-7 text-[16px] lg:text-[18px]">Our Branding Identity Visual Service will
@@ -323,8 +363,8 @@
         <!-- End Project -->
 
         <!-- Design Price -->
-        <div class="w-full px-6 lg:px-32 xl:px-0 my-12 lg:my-20">
-            <div class="max-w-[1215px] w-full mx-auto">
+        <div class="w-full px-6 lg:px-32 xl:px-0 my-12 lg:my-20 relative ">
+            <div class="max-w-[1215px] w-full mx-auto relative z-20">
                 <h1
                     class="text-2xl lg:text-4xl xl:text-5xl font-bold text-center lg:leading-tight xl:leading-tight text-pb-normal-active">
                     Design <span class="text-p-normal">Prices</span></h1>
@@ -332,14 +372,14 @@
                     Branding Identity
                     Service Packages at the lowest costs.</p>
                 <div
-                    class="my-8 bg-white drop-shadow-[0px_5px_20px_rgba(0,0,0,0.10)] rounded-xl overflow-hidden hidden lg:block">
+                    class="my-8 bg-white drop-shadow-[0px_5px_20px_rgba(0,0,0,0.10)] rounded-xl overflow-hidden hidden lg:block relative z-10">
                     <div class="flex flex-col lg:flex-row lg:gap-4">
-                        <div class="flex-1 px-10 pt-16 pb-10 text-center mb-16">
-                            <h4 class="text-xl xl:text-2xl font-bold text-[#6FBFFF]">HiBronze</h4>
+                        <div class="flex-1 px-10 pt-16 pb-10 text-center ">
+                            <h4 class="text-xl xl:text-2xl font-bold text-[#008FFF]">HiBronze</h4>
                             <p class="mt-3 text-2xl font-semibold">IDR 1.500.000</p>
                             <p class="text-sm text-[#4B5768]">/ Month</p>
                             <button
-                                class="border-[#6FBFFF] text-[#6FBFFF] p-[12px] border w-full mt-12 font-bold group-hover:text-pb-normal-active group-hover:bg-[#EDC700] rounded-full text-sm xl:text-base hover:bg-slate-200 ">Get
+                                class="border-[#008FFF] text-[#008FFF] p-[12px] border w-full mt-12 font-bold group-hover:text-pb-normal-active group-hover:bg-[#EDC700] rounded-full text-sm xl:text-base hover:bg-slate-200 ">Get
                                 Started Now</button>
                         </div>
                         <div
@@ -352,11 +392,11 @@
                                 Started Now</button>
                         </div>
                         <div class="flex-1 px-10 pt-16 pb-10 text-center hover:rounded-br-xl">
-                            <h4 class="text-xl xl:text-2xl font-bold text-p-normal text-[#6FBFFF]">HiGold</h4>
+                            <h4 class="text-xl xl:text-2xl font-bold text-p-normal text-[#008FFF]">HiGold</h4>
                             <p class="mt-3 text-2xl font-bold">IDR 1.500.000</p>
                             <p class="text-sm text-[#4B5768]">/ Month</p>
                             <button
-                                class="border-[#6FBFFF] text-[#6FBFFF] p-[12px] border w-full mt-12 font-bold group-hover:text-pb-normal-active group-hover:bg-[#EDC700] rounded-full text-sm xl:text-base hover:bg-slate-200">Get
+                                class="border-[#008FFF] text-[#008FFF] p-[12px] border w-full mt-12 font-bold group-hover:text-pb-normal-active group-hover:bg-[#EDC700] rounded-full text-sm xl:text-base hover:bg-slate-200">Get
                                 Started Now</button>
                         </div>
                     </div>
@@ -448,6 +488,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <!-- Responsive Mobile Price -->
                 <div class="lg:hidden mt-4">
@@ -465,7 +506,7 @@
                         <p class="text-center text-[14px] font-light">/Month</p>
                         <div class="flex justify-center">
                             <button
-                                class="mt-6 w-full h-[44px] rounded-[10px] outline outline-[#6FBFFF] text-[#6FBFFF]">Get
+                                class="mt-6 w-full h-[44px] rounded-[10px] outline border border-[#008FFF] text-[#008FFF]">Get
                                 Started Now</button>
                         </div>
                         <h1 class="mt-8 text-[18px]">Benefits</h1>
@@ -563,7 +604,7 @@
                         <p class="text-center text-[14px] font-light">/Month</p>
                         <div class="flex justify-center">
                             <button
-                                class="mt-6 w-full h-[44px] rounded-[10px] outline outline-[#6FBFFF] text-[#6FBFFF]">Get
+                                class="mt-6 w-full h-[44px] rounded-[10px] outline border border-[#008FFF] text-[#008FFF]">Get
                                 Started Now</button>
                         </div>
                         <h1 class="mt-8 text-[18px]">Benefits</h1>
@@ -607,7 +648,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Responsive Mobile Price -->
+                <!-- End Responsive Mobile Price -->
             </div>
         </div>
         <!-- End Design Price -->
@@ -691,7 +732,8 @@
             <div class="w-full h-full max-w-[1215px] mx-auto">
                 <div
                     class="w-full bg-[#2563EB] text-white h-full rounded-[20px] pt-8 pb-12 flex flex-col items-center justify-center flex-wrap relative overflow-hidden">
-                    <h1 class="text-[26px] lg:text-[42px] font-semibold text-center relative">Subscribe to our newsletter</h1>
+                    <h1 class="text-[26px] lg:text-[42px] font-semibold text-center relative">Subscribe to our
+                        newsletter</h1>
                     <div class="flex lg:flex-row flex-col mt-8 gap-4 flex-wrap relative">
                         <input type="text"
                             class="rounded-[9px] w-[246px] h-[54px] bg-transparent border border-white placeholder:text-white p-4"
@@ -703,8 +745,12 @@
                             class="lg:w-[263px] h-[54px] bg-black shadow-3xl rounded-[9px] shadow-blue-400 text-[20px] hover:bg-slate-700">Subscribe
                             Now</button>
                     </div>
-                    <div class="absolute -bottom-[160px] lg:-bottom-[140px] -right-[116px] w-[253px] h-[206px] border-[6px] border-white rounded-[50%]"></div>
-                    <div class="absolute -top-[140px] -left-[116px] w-[253px] h-[206px] border-[6px] opacity-40 border-white rounded-[50%] "></div>
+                    <div
+                        class="absolute -bottom-[160px] lg:-bottom-[140px] -right-[116px] w-[253px] h-[206px] border-[6px] border-white rounded-[50%]">
+                    </div>
+                    <div
+                        class="absolute -top-[140px] -left-[116px] w-[253px] h-[206px] border-[6px] opacity-40 border-white rounded-[50%] ">
+                    </div>
                 </div>
 
                 <div class="w-full h-full flex flex-col lg:flex-row mt-12 pb-10 border-b-2">
@@ -718,24 +764,28 @@
                             <div class="flex justify-normal gap-4 w-full mt-8">
                                 <div
                                     class="group flex justify-center items-center h-11 w-11 hover:bg-[#2563EB] rounded-full">
-                                    <img class="text-white" src="./assets/icons/1.svg" alt="logo twitter" /></div>
+                                    <img class="text-white" src="./assets/icons/1.svg" alt="logo twitter" />
+                                </div>
                                 <div
                                     class="group flex justify-center items-center h-11 w-11 hover:bg-[#2563EB]  rounded-full">
-                                    <img class="text-white" src="./assets/icons/2.svg" alt="logo facebook" /></div>
+                                    <img class="text-white" src="./assets/icons/2.svg" alt="logo facebook" />
+                                </div>
                                 <div
                                     class="group flex justify-center items-center h-11 w-11 hover:bg-[#2563EB]  rounded-full">
-                                    <img class="text-white" src="./assets/icons/3.svg" alt="logo instagram" /></div>
+                                    <img class="text-white" src="./assets/icons/3.svg" alt="logo instagram" />
+                                </div>
                                 <div
                                     class="group flex justify-center items-center h-11 w-11 hover:bg-[#2563EB]  rounded-full">
-                                    <img class="text-white" src="./assets/icons/4.svg" alt="logo github" /></div>
+                                    <img class="text-white" src="./assets/icons/4.svg" alt="logo github" />
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="h-full w-full mx-auto flex flex-col mt-10 lg:my-0">
                         <div class="flex flex-row">
                             <div class="w-full h-full lg:-mr-9 ">
-                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-8">COMPANY</h1>
-                                <div class="font-normal lg:text-[18px] text-[14px]">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-4">COMPANY</h1>
+                                <div class="font-normal lg:text-[16px] text-[14px]">
                                     <p class="py-1">About</p>
                                     <p class="py-1">Features</p>
                                     <p class="py-1">Works</p>
@@ -743,8 +793,8 @@
                                 </div>
                             </div>
                             <div class="w-full h-full mx-2">
-                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-8">HELP</h1>
-                                <div class="font-normal lg:text-[18px] text-[14px]">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-4">HELP</h1>
+                                <div class="font-normal lg:text-[16px] text-[14px]">
                                     <p class="py-1">Customer Support</p>
                                     <p class="py-1">Delivery Details</p>
                                     <p class="py-1">Terms & Conditions</p>
@@ -752,8 +802,9 @@
                                 </div>
                             </div>
                             <div class="w-full h-full">
-                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-8">RESOURCE</h1>
-                                <div class="font-normal lg:text-[18px] text-[14px]">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-4">RESOURCE
+                                </h1>
+                                <div class="font-normal lg:text-[16px] text-[14px]">
                                     <p class="py-1">Free Ebooks</p>
                                     <p class="py-1">Development Tutorial</p>
                                     <p class="py-1">How To - Blog</p>

@@ -16,8 +16,12 @@
         tailwind.config = {
             extend: {
                 fontFamily: {
-                    "plus-jakarta-sans": "Cabinet Grotesk",
+                    "plus-jakarta-sans": "Plus Jakarta Sans",
                     "inter": "Inter",
+                    "CabinetGrotesk-Regular": "CabinetGrotesk-Regular",
+                    "CabinetGrotesk-Medium": "CabinetGrotesk-Medium",
+                    "CabinetGrotesk-Bold": "CabinetGrotesk-Bold",
+                    "CabinetGrotesk-Extrabold": "CabinetGrotesk-Extrabold",
                 },
                 dropShadow: {
                     navbar: '0px 5px 20px rgba(0, 0, 0, 0.17)',
@@ -30,13 +34,47 @@
     <style type="text/tailwindcss">
         @layer base {
             h1,h2,h3,h4,h5,h6 {
-                font-family: 'Plus Jakarta Sans', sans-serif;
-                font-weight: 700;
+                font-family: 'CabinetGrotesk-ExtraBold', sans-serif;
             }
-            p, a, li { font-family: 'Inter', sans-serif; }
+            p, a,  li { font-family: 'Inter', sans-serif; }
             button {font-weight: 700;}
         }
-        
+        @font-face {
+                font-family: 'CabinetGrotesk-Regular';
+                src: url('./fonts/CabinetGrotesk-Regular.woff2') format('woff2'),
+                url('./fonts/CabinetGrotesk-Regular.woff') format('woff'),
+                url('./fonts/CabinetGrotesk-Regular.ttf') format('truetype');
+                font-weight: 400;
+                font-display: swap;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'CabinetGrotesk-Medium';
+                src: url('./fonts/CabinetGrotesk-Medium.woff2') format('woff2'),
+                url('./fonts/CabinetGrotesk-Medium.woff') format('woff'),
+                url('./fonts/CabinetGrotesk-Medium.ttf') format('truetype');
+                font-weight: 500;
+                font-display: swap;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'CabinetGrotesk-Bold';
+                src: url('./fonts/CabinetGrotesk-Bold.woff2') format('woff2'),
+                url('./fonts/CabinetGrotesk-Bold.woff') format('woff'),
+                url('./fonts/CabinetGrotesk-Bold.ttf') format('truetype');
+                font-weight: 700;
+                font-display: swap;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'CabinetGrotesk-Extrabold';
+                src: url('./fonts/CabinetGrotesk-Extrabold.woff2') format('woff2'),
+                url('./fonts/CabinetGrotesk-Extrabold.woff') format('woff'),
+                url('./fonts/CabinetGrotesk-Extrabold.ttf') format('truetype');
+                font-weight: 800;
+                font-display: swap;
+                font-style: normal;
+            }
     </style>
 </head>
 
@@ -63,7 +101,7 @@
                     <li>
                         <a href="">
                             <button
-                                class="bg-blue-500 px-4 font-thin py-2 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                                class="bg-blue-500 px-4 font-thin py-1 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
                                 Us</button>
                         </a>
                     </li>
@@ -111,7 +149,7 @@
             <img class="w-full h-full absolute " src="./assets/img/bg-banner-website.png" alt="Banner Service Detail" />
             <div class="relative z-20 flex flex-row mt-[100px] gap-5 max-w-[1215px] mx-auto mb-10">
                 <div class="max-w-[1050px] h-full relative z-20 text-center md:py-20 py-11">
-                    <h1 class="text-[38px] font-bold text-[#004073] leading-tight lg:text-[60px]">Unlock Your Digital
+                    <h1 class="text-[38px] w-[935px] font-bold text-[#004073] leading-tight lg:text-[60px]">Unlock Your Digital
                         Potential With Our Expert <span class="text-[#008FFF]"> Website And System Service</span></h1>
                     <p class="leading-loose mt-4 text-[16px] lg:text-[20px]">Elevate Your Online Presence, Streamline
                         Operations, and Drive Results</p>
@@ -159,7 +197,7 @@
                         <h2 class="font-bold text-[20px] lg:text-[25px] mt-3">Website Development</h2>
                     </div>
                     <div class="p-6 inset-0 items-center leading-loose font-light flex flex-col">
-                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify">Boost your website and get
+                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify opacity-60">Boost your website and get
                             more engagement
                             from your customers. We create
                             responsive, attention-grabbing websites that leave a lasting impression.</p>
@@ -176,7 +214,7 @@
                         <h2 class="font-bold text-[20px] lg:text-[25px] mt-3">System & Integration</h2>
                     </div>
                     <div class="p-6 inset-0 items-center leading-loose font-light flex flex-col">
-                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify">Streamline your business
+                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify opacity-60">Streamline your business
                             operations with our
                             system development and
                             integration solutions. From CRM systems to e-commerce platforms, we tailor solutions
@@ -195,7 +233,7 @@
                         <h2 class="font-bold text-[20px] lg:text-[25px] mt-3">Maintenance & Support</h2>
                     </div>
                     <div class="p-6 inset-0 items-center leading-loose font-light flex flex-col">
-                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify">We dont just build and
+                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify opacity-60">We dont just build and
                             leave. Our team
                             provides ongoing maintenance and
                             support to keep your website and systems running smoothly. Count on us for updates,
@@ -213,18 +251,16 @@
         </section>
         <!-- End Offer -->
 
-
-
         <!-- WhyUs -->
         <section class="px-6  lg:px-32 xl:px-0 font-plus-jakarta-sans lg:pb-12 lg:mt-6 relative">
-            <div class="relative max-w-[1215px] w-full mx-auto py-10">
-                <div class="relative flex  justify-center items-center">
-                    <div class="relative hidden lg:block flex-1 rounded-xl z-10">
+            <div class="relative  w-full mx-auto py-10">
+                <div class="relative flex  justify-center items-center ">
+                    <div class="relative hidden lg:inline-block flex-1 rounded-xl z-10  max-w-[1215px]">
                         <img src=./assets/img/website-whyus.png alt="WhyUs" />
                     </div>
                     <div
-                        class="lg:absolute lg:w-[65%] lg:h-[633px] lg:top-[50%] lg:bottom-[50%]  lg:right-0 px-8 lg:px-10 py-8 lg:py-8 bg-white border  lg:-translate-y-[50%] rounded-xl lg:rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-0">
-                        <div class="lg:ml-48 my-7 lg:mt-20 leading-tight z-20">
+                        class="lg:absolute lg:w-[65%] lg:h-[633px] lg:top-[50%] lg:bottom-[50%]  lg:right-0 px-8 lg:px-10 py-8 lg:py-8 bg-white lg:-translate-y-[50%] rounded-xl lg:rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-0">
+                        <div class="lg:ml-64 my-4 lg:mt-20 leading-tight z-20  max-w-[600px]">
                             <h1 class="lg:text-[32px] text-[28px] leading-tight font-normal text-[#008FFF]">
                                 Why Choose Us</h1>
                             <p class="mt-4 xl:mt-5 text-[38px] xl:text-[50px] font-medium">We Deliver Increased
@@ -327,44 +363,46 @@
                     <h1 class="text-[#008FFF] cursor-pointer">Apps</h1>
                 </div>
             </div>
-            <div class="max-w-[1215px] h-full mx-auto mt-10 swiper swiper-project ">
-                <div class="swiper-wrapper">
+            <div class="max-w-[1536px] h-full mx-auto mt-10 swiper swiper-project relative">
+                <div class="swiper-wrapper relative">
                     <div class="swiper-slide  flex justify-center items-center flex-wrap ">
                         <img class="" src="assets/img/project-slider1.png" alt="">
                     </div>
-                    <div class="swiper-slide h-[calc((100% - 30px) / 2)] flex justify-center items-center flex-wrap">
+                    <div class="swiper-slide  flex justify-center items-center flex-wrap">
                         <img class="max-w-[100%] max-h-[100%] h-auto" src="assets/img/project-slider2.png" alt="">
                     </div>
-                    <div class="swiper-slide h-[calc((100% - 30px) / 2)] flex justify-center items-center">
+                    <div class="swiper-slide  flex justify-center items-center">
                         <img class="max-w-[100%] max-h-[100%] h-auto" src="assets/img/project-slider3.png" alt="">
                     </div>
-                    <div class="swiper-slide h-[calc((100% - 30px) / 2)] flex justify-center items-center">
+                    <div class="swiper-slide flex justify-center items-center">
                         <img class="max-w-[100%] max-h-[100%] h-auto" src="assets/img/project-slider4.png" alt="">
                     </div>
-                    <div class="swiper-slide h-[calc((100% - 30px) / 2)] flex justify-center items-center">
+                    <div class="swiper-slide  flex justify-center items-center">
                         <img class="max-w-[100%] max-h-[100%] h-auto" src="assets/img/project-slider5.png" alt="">
                     </div>
-                    <div class="swiper-slide h-[calc((100% - 30px) / 2)] flex justify-center items-center">
+                    <div class="swiper-slide  flex justify-center items-center">
                         <img class="max-w-[100%] max-h-[100%] h-auto" src="assets/img/project-slider5.png" alt="">
                     </div>
-                    <div class="swiper-slide h-[calc((100% - 30px) / 2)] flex justify-center items-center">
+                    <div class="swiper-slide  flex justify-center items-center">
                         <img class="max-w-[100%] max-h-[100%] h-auto" src="assets/img/project-slider4.png" alt="">
                     </div>
-                    <div class="swiper-slide h-[calc((100% - 30px) / 2)] flex justify-center items-center">
+                    <div class="swiper-slide  flex justify-center items-center">
                         <img class="max-w-[100%] max-h-[100%] h-auto" src="assets/img/project-slider3.png" alt="">
                     </div>
-                    <div class="swiper-slide h-[calc((100% - 30px) / 2)] flex justify-center items-center">
+                    <div class="swiper-slide  flex justify-center items-center">
                         <img class="max-w-[100%] max-h-[100%] h-auto" src="assets/img/project-slider2.png" alt="">
                     </div>
-                    <div class="swiper-slide h-[calc((100% - 30px) / 2)] flex justify-center items-center">
+                    <div class="swiper-slide  flex justify-center items-center">
                         <img class="max-w-[100%] max-h-[100%] h-auto" src="assets/img/project-slider1.png" alt="">
                     </div>
                 </div>
                 <div
-                    class="swiper-button-next rounded-full md:bg-[#EDC700] md:text-white text-[12px] md:h-[75px] md:w-[75px]">
+                    class="swiper-button-next rounded-full md:bg-[#EDC700] md:text-white text-[12px] md:h-[75px] md:w-[75px] z-30">
                 </div>
-                <div class="swiper-button-prev rounded-full md:bg-[#EDC700] md:text-white md:h-[75px] md:w-[75px]">
+                <div class="swiper-button-prev rounded-full md:bg-[#EDC700] md:text-white md:h-[75px] md:w-[75px] z-30">
                 </div>
+                <div class=" bg-sky-300 w-28 h-full blur-[40px] rounded-full z-20 opacity-100 absolute top-0 left-0 hidden lg:block" ></div>
+                <div class=" bg-sky-300 w-28 h-full blur-[40px] rounded-full z-20 opacity-100 absolute top-0 right-0 hidden lg:block" ></div>
             </div>
         </section>
         <!-- End Project Slider -->
@@ -381,12 +419,12 @@
                 <div
                     class="my-8 bg-white drop-shadow-[0px_5px_20px_rgba(0,0,0,0.10)] rounded-xl overflow-hidden hidden lg:block relative z-10">
                     <div class="flex flex-col lg:flex-row lg:gap-4">
-                        <div class="flex-1 px-10 pt-16 pb-10 text-center mb-16">
-                            <h4 class="text-xl xl:text-2xl font-bold text-[#6FBFFF]">HiBronze</h4>
+                        <div class="flex-1 px-10 pt-16 pb-10 text-center ">
+                            <h4 class="text-xl xl:text-2xl font-bold text-[#008FFF]">HiBronze</h4>
                             <p class="mt-3 text-2xl font-semibold">IDR 1.500.000</p>
                             <p class="text-sm text-[#4B5768]">/ Month</p>
                             <button
-                                class="border-[#6FBFFF] text-[#6FBFFF] p-[12px] border w-full mt-12 font-bold group-hover:text-pb-normal-active group-hover:bg-[#EDC700] rounded-full text-sm xl:text-base hover:bg-slate-200 ">Get
+                                class="border-[#008FFF] text-[#008FFF] p-[12px] border w-full mt-12 font-bold group-hover:text-pb-normal-active group-hover:bg-[#EDC700] rounded-full text-sm xl:text-base hover:bg-slate-200 ">Get
                                 Started Now</button>
                         </div>
                         <div
@@ -399,11 +437,11 @@
                                 Started Now</button>
                         </div>
                         <div class="flex-1 px-10 pt-16 pb-10 text-center hover:rounded-br-xl">
-                            <h4 class="text-xl xl:text-2xl font-bold text-p-normal text-[#6FBFFF]">HiGold</h4>
+                            <h4 class="text-xl xl:text-2xl font-bold text-p-normal text-[#008FFF]">HiGold</h4>
                             <p class="mt-3 text-2xl font-bold">IDR 1.500.000</p>
                             <p class="text-sm text-[#4B5768]">/ Month</p>
                             <button
-                                class="border-[#6FBFFF] text-[#6FBFFF] p-[12px] border w-full mt-12 font-bold group-hover:text-pb-normal-active group-hover:bg-[#EDC700] rounded-full text-sm xl:text-base hover:bg-slate-200">Get
+                                class="border-[#008FFF] text-[#008FFF] p-[12px] border w-full mt-12 font-bold group-hover:text-pb-normal-active group-hover:bg-[#EDC700] rounded-full text-sm xl:text-base hover:bg-slate-200">Get
                                 Started Now</button>
                         </div>
                     </div>
@@ -513,7 +551,7 @@
                         <p class="text-center text-[14px] font-light">/Month</p>
                         <div class="flex justify-center">
                             <button
-                                class="mt-6 w-full h-[44px] rounded-[10px] outline outline-[#6FBFFF] text-[#6FBFFF]">Get
+                                class="mt-6 w-full h-[44px] rounded-[10px] outline border border-[#008FFF] text-[#008FFF]">Get
                                 Started Now</button>
                         </div>
                         <h1 class="mt-8 text-[18px]">Benefits</h1>
@@ -611,7 +649,7 @@
                         <p class="text-center text-[14px] font-light">/Month</p>
                         <div class="flex justify-center">
                             <button
-                                class="mt-6 w-full h-[44px] rounded-[10px] outline outline-[#6FBFFF] text-[#6FBFFF]">Get
+                                class="mt-6 w-full h-[44px] rounded-[10px] outline border border-[#008FFF] text-[#008FFF]">Get
                                 Started Now</button>
                         </div>
                         <h1 class="mt-8 text-[18px]">Benefits</h1>
@@ -655,9 +693,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Responsive Mobile Price -->
+                <!-- End Responsive Mobile Price -->
             </div>
-            <div class=" bg-sky-300 w-72 h-72 blur-[300px] z-0 opacity-100 absolute top-[40%] lg:w-full " ></div>
+            <div class=" bg-sky-300 w-72 h-72 blur-[300px] z-0 opacity-100 absolute top-[40%] lg:w-full hidden lg:block" ></div>
         </div>
         <!-- End Design Price -->
         
@@ -679,8 +717,8 @@
                                     <h2 class="md:text-[18px] text-[14px] font-thin">CEO, XYZ Company</h2>
                                 </div>
                             </div>
-                            <div class="mt-6">
-                                <p>Working with HiSocial was a game-changer for our brand. Their logo design and
+                            <div class="mt-6 ">
+                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo design and
                                     branding
                                     strategy catapulted our business to new heights.</p>
                             </div>
@@ -694,7 +732,7 @@
                                 </div>
                             </div>
                             <div class="mt-6">
-                                <p>Working with HiSocial was a game-changer for our brand. Their logo design and
+                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo design and
                                     branding
                                     strategy catapulted our business to new heights.</p>
                             </div>
@@ -708,7 +746,7 @@
                                 </div>
                             </div>
                             <div class="mt-6">
-                                <p>Working with HiSocial was a game-changer for our brand. Their logo design and
+                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo design and
                                     branding
                                     strategy catapulted our business to new heights.</p>
                             </div>
@@ -722,7 +760,7 @@
                                 </div>
                             </div>
                             <div class="mt-6">
-                                <p>Working with HiSocial was a game-changer for our brand. Their logo design and
+                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo design and
                                     branding
                                     strategy catapulted our business to new heights.</p>
                             </div>
@@ -736,7 +774,7 @@
                                 </div>
                             </div>
                             <div class="mt-6">
-                                <p>Working with HiSocial was a game-changer for our brand. Their logo design and
+                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo design and
                                     branding
                                     strategy catapulted our business to new heights.</p>
                             </div>
@@ -815,8 +853,8 @@
                     <div class="h-full w-full mx-auto flex flex-col mt-10 lg:my-0">
                         <div class="flex flex-row">
                             <div class="w-full h-full lg:-mr-9 ">
-                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-8">COMPANY</h1>
-                                <div class="font-normal lg:text-[18px] text-[14px]">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-4">COMPANY</h1>
+                                <div class="font-normal lg:text-[16px] text-[14px]">
                                     <p class="py-1">About</p>
                                     <p class="py-1">Features</p>
                                     <p class="py-1">Works</p>
@@ -824,8 +862,8 @@
                                 </div>
                             </div>
                             <div class="w-full h-full mx-2">
-                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-8">HELP</h1>
-                                <div class="font-normal lg:text-[18px] text-[14px]">
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-4">HELP</h1>
+                                <div class="font-normal lg:text-[16px] text-[14px]">
                                     <p class="py-1">Customer Support</p>
                                     <p class="py-1">Delivery Details</p>
                                     <p class="py-1">Terms & Conditions</p>
@@ -833,9 +871,9 @@
                                 </div>
                             </div>
                             <div class="w-full h-full">
-                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-8">RESOURCE
+                                <h1 class="text-[#2563EB] lg:text-[20px] text-[18px] font-semibold lg:mb-4">RESOURCE
                                 </h1>
-                                <div class="font-normal lg:text-[18px] text-[14px]">
+                                <div class="font-normal lg:text-[16px] text-[14px]">
                                     <p class="py-1">Free Ebooks</p>
                                     <p class="py-1">Development Tutorial</p>
                                     <p class="py-1">How To - Blog</p>
@@ -891,18 +929,18 @@
             },
             freeMode: true,
             loop: true,
-            spaceBetween: 5,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
         });
 
         $(document).ready(function () {
-            // Sembunyikan semua section terlebih dahulu
             $(".price").hide();
-
-            // Tampilkan section pertama saat halaman dimuat
             $("#hisilver").show();
             $("#button-silver").addClass("bg-[#008FFF]");
             $("#button-silver").addClass("text-white");
@@ -910,12 +948,10 @@
             $(".section-button").click(function () {
                 var target = $(this).data("target");
 
-                // Sembunyikan semua section
                 $(".price").hide();
                 $(".section-button").removeClass("bg-[#008FFF]");
                 $(".section-button").removeClass("text-white");
 
-                // Tampilkan section yang sesuai dengan tombol yang diklik
                 $("#" + target).show();
                 $(this).addClass("bg-[#008FFF]");
                 $(this).addClass("text-white");
