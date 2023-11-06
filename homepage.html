@@ -81,41 +81,42 @@
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <div class="w-full fixed top-0 h-auto px-6 lg:px-32 xl:px-0 bg-white  z-[999999]  shadow-xl">
-            <div class="flex items-center  justify-between max-w-[1220px]  h-[74px] lg:h-20  mx-auto  ">
-                <img src="./assets/img/logo.png" class="cursor-pointer h-11 lg:h-12 xl:h-14" alt="logo hi-social">
-                <ul class="hidden lg:flex items-center space-x-7 xl:space-x-10 text-[18px]">
-                    <li class="hover:text-gray-400">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="hover:text-gray-400">
-                        <a href="">Service</a>
-                    </li>
-                    <li class="hover:text-gray-400">
-                        <a href="">Portofolio</a>
-                    </li>
-                    <li class="hover:text-gray-400">
-                        <a href="">About Us</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <button
-                                class="bg-blue-500 font-thin px-4 py-1 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
-                                Us</button>
-                        </a>
-                    </li>
-                </ul>
-                <button class="menu-btn lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-7 h-7">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
-            </div>
+    <nav class="w-full  sticky top-0 h-auto px-5 lg:px-32 xl:px-0 bg-white  shadow-xl z-50">
+        <div class="flex items-center  justify-between max-w-[1215px]  h-[74px] lg:h-20  mx-auto  ">
+            <img src="./assets/img/logo.png" class="cursor-pointer h-11 lg:h-12 xl:h-14" alt="logo hi-social">
+            <ul class="hidden lg:flex items-center space-x-7 xl:space-x-10 text-[18px]">
+                <li class="hover:text-gray-400">
+                    <a href="">Home</a>
+                </li>
+                <li class="hover:text-gray-400">
+                    <a href="">Service</a>
+                </li>
+                <li class="hover:text-gray-400">
+                    <a href="">Portofolio</a>
+                </li>
+                <li class="hover:text-gray-400">
+                    <a href="">About Us</a>
+                </li>
+                <li>
+                    <a href="">
+                        <button
+                            class="bg-blue-500 font-thin px-4 py-1 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                            Us</button>
+                    </a>
+                </li>
+            </ul>
+            <button class="menu-btn lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
         </div>
-        <div
+        </div>
+        
+    </nav>
+    <div
             class="nav-menu fixed w-screen h-[250px] lg:hidden left-0 right-0 -top-[100vh] px-6 py-4 bg-white z-40 opacity-40 transition-all duration-700 shadow-2xl">
             <ul class="font-normal space-y-2">
                 <li class="pb-2  hover:text-gray-400   hover:border-b-gray-300">
@@ -139,14 +140,13 @@
                 </li>
             </ul>
         </div>
-    </nav>
     <!-- End Navbar -->
 
     <div class="max-w-[1920px] sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-[1920px] mx-auto">
 
         <!-- Banner -->
-        <section class="mt-4 lg:mt-16 relative flex flex-col items-center font-plus-jakarta-sans sm:w-full px-6">
-            <div class="relative z-20 flex flex-row mt-[80px] gap-5 max-w-[1215px] mx-auto lg:mb-10 ">
+        <section class=" relative flex flex-col items-center font-plus-jakarta-sans sm:w-full px-6">
+            <div class="relative z-20 flex flex-row mt-[50px] gap-5 max-w-[1215px] mx-auto lg:mb-10 ">
                 <div class="w-full h-full">
                     <h1 class="text-[30px] leading-tight font-medium text-[#001D33] lg:text-[55px] ">Keep Growing With
                         Forward Thinking With Us.</h1>
@@ -320,7 +320,7 @@
         </section>
         <!-- End Other Service -->
 
-        <!-- Our Success Project -->
+        <!-- Our Success Project BabyKid-->
         <section class="max-w-[1215px] h-full mx-auto mt-4 px-4 lg:px-0">
             <div class="flex flex-col lg:flex-row">
                 <div class="lg:w-[52%] w-full">
@@ -503,7 +503,7 @@
                     <h1 class="text-[34px] lg:text-[36px] my-4">IDR. 1.500.000 <span
                             class="text-[16px] font-thin">/Month</span></h1>
                     <button
-                        class="w-full h-[44px] outline outline-[#008FFF] hover:bg-slate-200 rounded-[36px] text-[#008FFF] my-4">Get
+                        class="w-full h-[44px] border-2 border-[#008FFF] hover:bg-slate-200 rounded-[36px] text-[#008FFF] my-4">Get
                         Started Now</button>
                     <div class="mt-8 flex items-center justify-start gap-4">
                         <img src="assets/icons/ceklist.svg" alt="">
@@ -544,7 +544,7 @@
                     <h1 class="text-[34px] lg:text-[36px] my-4">IDR. 2.500.000 <span
                             class="text-[16px] font-thin">/Month</span></h1>
                     <button
-                        class="w-full h-[44px] outline outline-[#008FFF] hover:bg-slate-200 rounded-[36px] text-[#008FFF] my-4">Get
+                        class="w-full h-[44px] border-2 border-[#008FFF] hover:bg-slate-200 rounded-[36px] text-[#008FFF] my-4">Get
                         Started Now</button>
                     <div class="mt-8 flex items-center justify-start gap-4">
                         <img src="assets/icons/ceklist.svg" alt="">
@@ -585,7 +585,7 @@
                     <h1 class="text-[34px] lg:text-[36px] my-4">IDR. 4.000.000 <span
                             class="text-[16px] font-thin">/Month</span></h1>
                     <button
-                        class="w-full h-[44px] outline outline-[#008FFF] hover:bg-slate-200 rounded-[36px] text-[#008FFF] my-4">Get
+                        class="w-full h-[44px] border-2 border-[#008FFF] hover:bg-slate-200 rounded-[36px] text-[#008FFF] my-4">Get
                         Started Now</button>
                     <div class="mt-8 flex items-center justify-start gap-4">
                         <img src="assets/icons/ceklist.svg" alt="">

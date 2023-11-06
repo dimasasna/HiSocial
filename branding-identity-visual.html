@@ -81,93 +81,97 @@
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <div class="w-full fixed top-0 h-auto px-6 lg:px-32 xl:px-0 bg-white  z-[999999]  shadow-xl">
-            <div class="flex items-center  justify-between max-w-[1220px]  h-[74px] lg:h-20  mx-auto  ">
-                <img src="./assets/img/logo.png" class="cursor-pointer h-11 lg:h-12 xl:h-14" alt="logo hi-social">
-                <ul class="hidden lg:flex items-center space-x-7 xl:space-x-10 text-[18px]">
-                    <li class="hover:text-gray-400">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="hover:text-gray-400">
-                        <a href="">Service</a>
-                    </li>
-                    <li class="hover:text-gray-400">
-                        <a href="">Portofolio</a>
-                    </li>
-                    <li class="hover:text-gray-400">
-                        <a href="">About Us</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <button
-                                class="bg-blue-500 font-thin px-4 py-1 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
-                                Us</button>
-                        </a>
-                    </li>
-                </ul>
-                <button class="menu-btn lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-7 h-7">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div
-            class="nav-menu fixed w-screen h-[250px] lg:hidden left-0 right-0 -top-[100vh] px-6 py-4 bg-white z-40 opacity-40 transition-all duration-700 shadow-2xl">
-            <ul class="font-normal space-y-2">
-                <li class="pb-2  hover:text-gray-400   hover:border-b-gray-300">
+    <nav class="w-full  sticky top-0 h-auto px-5 lg:px-32 xl:px-0 bg-white  shadow-xl z-50">
+        <div class="flex items-center  justify-between max-w-[1215px]  h-[74px] lg:h-20  mx-auto  ">
+            <img src="./assets/img/logo.png" class="cursor-pointer h-11 lg:h-12 xl:h-14" alt="logo hi-social">
+            <ul class="hidden lg:flex items-center space-x-7 xl:space-x-10 text-[18px]">
+                <li class="hover:text-gray-400">
                     <a href="">Home</a>
                 </li>
-                <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <li class="hover:text-gray-400">
                     <a href="">Service</a>
                 </li>
-                <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <li class="hover:text-gray-400">
                     <a href="">Portofolio</a>
                 </li>
-                <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <li class="hover:text-gray-400">
                     <a href="">About Us</a>
                 </li>
-                <li class="pt-2">
-                    <a href="#">
+                <li>
+                    <a href="">
                         <button
-                            class="bg-blue-500 font-thin w-full lg:w-auto px-4 py-2 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                            class="bg-blue-500 font-thin px-4 py-1 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
                             Us</button>
                     </a>
                 </li>
             </ul>
+            <button class="menu-btn lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
         </div>
+        </div>
+
     </nav>
+    <div
+        class="nav-menu fixed w-screen h-[250px] lg:hidden left-0 right-0 -top-[100vh] px-6 py-4 bg-white z-40 opacity-40 transition-all duration-700 shadow-2xl">
+        <ul class="font-normal space-y-2">
+            <li class="pb-2  hover:text-gray-400   hover:border-b-gray-300">
+                <a href="">Home</a>
+            </li>
+            <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <a href="">Service</a>
+            </li>
+            <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <a href="">Portofolio</a>
+            </li>
+            <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <a href="">About Us</a>
+            </li>
+            <li class="pt-2">
+                <a href="#">
+                    <button
+                        class="bg-blue-500 font-thin w-full lg:w-auto px-4 py-2 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                        Us</button>
+                </a>
+            </li>
+        </ul>
+    </div>
     <!-- End Navbar -->
 
-    <div class="max-w-[1920px] sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-[1920px] mx-auto">
 
-        <!-- Banner -->
-        <section class=" lg:mt-16 relative flex flex-col items-center font-plus-jakarta-sans sm:w-full px-6">
-            <img class="w-full h-full absolute" src="./assets/img/service-detail1.png" alt="Banner Service Detail" />
-            <div class="relative z-20 flex flex-row mt-[100px] gap-5 max-w-[1215px] mx-auto mb-10">
-                <div class="w-full h-full">
-                    <h1 class="text-[30px] font-bold text-[#004073] lg:text-[42px]">Elevate Your Brand With Our
-                        Expert<span class="text-[#008FFF]"> Branding Identity Visual Service</span></h1>
-                    <p class="leading-loose font-thin mt-4 text-[16px] lg:text-[20px] text-justify">we know that a powerful brand
-                        identity goes
-                        beyond aesthetics; it&apos;s a strategic asset that defines your business, speaks to your
-                        audience, and sets you apart in a crowded market. We&apos;re here to partner with you and bring
-                        your brand to life.</p>
-                    <button
-                        class="text-white lg:text-[20px] mt-10 bg-[#008FFF] hover:bg-blue-600 shadow-3xl rounded-[20px] shadow-blue-400 w-full h-[50px] lg:h-14 lg:w-72 ">Get
-                        Started</button>
 
-                </div>
-                <div class="h-full w-full ml-10 -mt-12 hidden lg:block">
-                    <img class="object-cover" src="./assets/img/service-image1.png" alt="" />
-                </div>
+    <!-- Banner -->
+    <section
+        class="relative w-[100vw-1px] h-[calc(100vh-74px)] lg:h-[calc(100vh-80px)] xl:h-[calc(100vh-80px)] mx-auto flex flex-row justify-center items-center">
+        <img class="w-full h-full absolute object-cover" src="./assets/img/service-detail1.png"
+            alt="Banner Service Detail" />
+        <div
+            class="absolute z-20 flex flex-row  gap-5 max-w-[1215px] mx-auto px-6 lg:px-0 w-full justify-center items-center">
+            <div class="w-full h-full">
+                <h1 class="text-[30px] font-bold text-[#004073] lg:text-[42px]">Elevate Your Brand With Our
+                    Expert<span class="text-[#008FFF]"> Branding Identity Visual Service</span></h1>
+                <p class="leading-loose font-thin mt-4 text-[16px] lg:text-[20px] text-justify">we know that a powerful
+                    brand
+                    identity goes
+                    beyond aesthetics; it&apos;s a strategic asset that defines your business, speaks to your
+                    audience, and sets you apart in a crowded market. We&apos;re here to partner with you and bring
+                    your brand to life.</p>
+                <button
+                    class="text-white lg:text-[20px] mt-10 bg-[#008FFF] hover:bg-blue-600 shadow-3xl rounded-[20px] shadow-blue-400 w-full h-[50px] lg:h-14 lg:w-72 ">Get
+                    Started</button>
+
             </div>
-        </section>
-        <!-- End Banner -->
-
+            <div class="h-full w-full ml-10 -mt-12 hidden lg:block">
+                <img class="object-cover" src="./assets/img/service-image1.png" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- End Banner -->
+    <div class="max-w-[1920px] sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-[1920px] mx-auto">
         <!-- Collaborate Company -->
         <section class="bg-[#004073] h-full font-plus-jakarta-sans px-3">
             <div class="relative w-full h-64 xl:h-[260px] bg-p-dark-hover overflow-hidden">

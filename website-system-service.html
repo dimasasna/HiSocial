@@ -81,86 +81,90 @@
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <div class="w-full fixed top-0 h-auto px-6 lg:px-32 xl:px-0 bg-white  z-[999999]  shadow-xl">
-            <div class="flex items-center  justify-between max-w-[1220px]  h-[74px] lg:h-20  mx-auto  ">
-                <img src="./assets/img/logo.png" class="cursor-pointer h-11 lg:h-12 xl:h-14" alt="logo hi-social">
-                <ul class="hidden lg:flex items-center space-x-7 xl:space-x-10 text-[18px]">
-                    <li class="hover:text-gray-400">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="hover:text-gray-400">
-                        <a href="">Service</a>
-                    </li>
-                    <li class="hover:text-gray-400">
-                        <a href="">Portofolio</a>
-                    </li>
-                    <li class="hover:text-gray-400">
-                        <a href="">About Us</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <button
-                                class="bg-blue-500 px-4 font-thin py-1 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
-                                Us</button>
-                        </a>
-                    </li>
-                </ul>
-                <button class="menu-btn lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-7 h-7">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div
-            class="nav-menu fixed w-screen h-[250px] lg:hidden left-0 right-0 -top-[100vh] px-6 py-4 bg-white z-40 opacity-40 transition-all duration-700 shadow-2xl">
-            <ul class="font-normal space-y-2">
-                <li class="pb-2  hover:text-gray-400   hover:border-b-gray-300">
+    <nav class="w-full  sticky top-0 h-auto px-5 lg:px-32 xl:px-0 bg-white  shadow-xl z-50">
+        <div class="flex items-center  justify-between max-w-[1215px]  h-[74px] lg:h-20  mx-auto  ">
+            <img src="./assets/img/logo.png" class="cursor-pointer h-11 lg:h-12 xl:h-14" alt="logo hi-social">
+            <ul class="hidden lg:flex items-center space-x-7 xl:space-x-10 text-[18px]">
+                <li class="hover:text-gray-400">
                     <a href="">Home</a>
                 </li>
-                <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <li class="hover:text-gray-400">
                     <a href="">Service</a>
                 </li>
-                <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <li class="hover:text-gray-400">
                     <a href="">Portofolio</a>
                 </li>
-                <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <li class="hover:text-gray-400">
                     <a href="">About Us</a>
                 </li>
-                <li class="pt-2">
-                    <a href="#">
+                <li>
+                    <a href="">
                         <button
-                            class="bg-blue-500 w-full font-thin lg:w-auto px-4 py-2 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                            class="bg-blue-500 font-thin px-4 py-1 ml-6 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
                             Us</button>
                     </a>
                 </li>
             </ul>
+            <button class="menu-btn lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
         </div>
+        </div>
+
     </nav>
+    <div
+        class="nav-menu fixed w-screen h-[250px] lg:hidden left-0 right-0 -top-[100vh] px-6 py-4 bg-white z-40 opacity-40 transition-all duration-700 shadow-2xl">
+        <ul class="font-normal space-y-2">
+            <li class="pb-2  hover:text-gray-400   hover:border-b-gray-300">
+                <a href="">Home</a>
+            </li>
+            <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <a href="">Service</a>
+            </li>
+            <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <a href="">Portofolio</a>
+            </li>
+            <li class="pb-2 hover:text-gray-400  hover:border-b-gray-300">
+                <a href="">About Us</a>
+            </li>
+            <li class="pt-2">
+                <a href="#">
+                    <button
+                        class="bg-blue-500 font-thin w-full lg:w-auto px-4 py-2 text-white rounded-full hover:bg-blue-600 active:bg-blue-700">Contact
+                        Us</button>
+                </a>
+            </li>
+        </ul>
+    </div>
     <!-- End Navbar -->
 
-    <div class="max-w-[1920px] sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-[1920px] mx-auto">
 
-        <!-- Banner -->
-        <section class=" lg:mt-12 relative flex flex-col items-center font-plus-jakarta-sans sm:w-full px-6 -mb-6">
-            <img class="w-full h-full absolute " src="./assets/img/bg-banner-website.png" alt="Banner Service Detail" />
-            <div class="relative z-20 flex flex-row mt-[100px] gap-5 max-w-[1215px] mx-auto mb-10">
-                <div class="max-w-[1050px] h-full relative z-20 text-center md:py-20 py-11">
-                    <h1 class="text-[38px] max-w-[935px] font-bold text-[#004073] leading-tight lg:text-[60px]">Unlock Your Digital
-                        Potential With Our Expert <span class="text-[#008FFF]"> Website And System Service</span></h1>
-                    <p class="leading-loose mt-4 text-[16px] lg:text-[20px]">Elevate Your Online Presence, Streamline
-                        Operations, and Drive Results</p>
-                    <button
-                        class="text-white lg:mt-20 mt-10 bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-[20px] shadow-blue-400 w-full h-[50px] lg:h-14 lg:w-72 ">Get
-                        Started</button>
-                </div>
+
+    <!-- Banner -->
+    <section
+        class="relative w-[100vw-1px] h-[calc(100vh-74px)] lg:h-[calc(100vh-80px)] xl:h-[calc(100vh-80px)] mx-auto flex justify-center items-center">
+        <img class="w-full h-full inset-0 absolute object-cover scale-y-110 lg:scale-y-100"
+            src="./assets/img/banner-website.png" alt="Banner Service Detail" />
+        <div class="absolute z-20 flex flex-row justify-center items-center  gap-5 max-w-[1215px] mx-auto mb-10 px-4">
+            <div class="max-w-[1050px] h-full relative z-20 text-center md:py-20 py-11">
+                <h1 class="text-[38px] max-w-[935px] font-bold text-[#004073] leading-tight lg:text-[60px]">Unlock Your
+                    Digital
+                    Potential With Our Expert <span class="text-[#008FFF]"> Website And System Service</span></h1>
+                <p class="leading-loose mt-4 text-[16px] lg:text-[20px]">Elevate Your Online Presence, Streamline
+                    Operations, and Drive Results</p>
+                <button
+                    class="text-white lg:mt-20 mt-10 bg-blue-500 hover:bg-blue-600 shadow-3xl rounded-[20px] shadow-blue-400 w-full h-[50px] lg:h-14 lg:w-72 ">Get
+                    Started</button>
             </div>
-        </section>
-        <!-- End Banner -->
+        </div>
+    </section>
+    <!-- End Banner -->
 
+    <div class="max-w-[1920px] sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-[1920px] mx-auto">
         <!-- Collaborate Company -->
         <section class="bg-[#004073] h-full font-plus-jakarta-sans ">
             <div class="relative w-full h-64 xl:h-[260px] bg-p-dark-hover overflow-hidden">
@@ -197,7 +201,8 @@
                         <h2 class="font-bold text-[20px] lg:text-[25px] mt-3">Website Development</h2>
                     </div>
                     <div class="p-6 inset-0 items-center leading-loose font-light flex flex-col">
-                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify opacity-60">Boost your website and get
+                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify opacity-60">Boost your website
+                            and get
                             more engagement
                             from your customers. We create
                             responsive, attention-grabbing websites that leave a lasting impression.</p>
@@ -214,7 +219,8 @@
                         <h2 class="font-bold text-[20px] lg:text-[25px] mt-3">System & Integration</h2>
                     </div>
                     <div class="p-6 inset-0 items-center leading-loose font-light flex flex-col">
-                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify opacity-60">Streamline your business
+                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify opacity-60">Streamline your
+                            business
                             operations with our
                             system development and
                             integration solutions. From CRM systems to e-commerce platforms, we tailor solutions
@@ -233,7 +239,8 @@
                         <h2 class="font-bold text-[20px] lg:text-[25px] mt-3">Maintenance & Support</h2>
                     </div>
                     <div class="p-6 inset-0 items-center leading-loose font-light flex flex-col">
-                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify opacity-60">We dont just build and
+                        <p class="min-h-[180px] text-[14px] lg:text-[16px] text-justify opacity-60">We dont just build
+                            and
                             leave. Our team
                             provides ongoing maintenance and
                             support to keep your website and systems running smoothly. Count on us for updates,
@@ -347,9 +354,9 @@
                     </div>
                     <div class=" bg-sky-300 w-72 h-72 blur-[100px] z-0 opacity-50 absolute lg:h-[500px] lg:w-full " />
                 </div>
-                
+
             </div>
-            
+
         </section>
         <!-- End What Do You Need -->
 
@@ -401,8 +408,12 @@
                 </div>
                 <div class="swiper-button-prev rounded-full md:bg-[#EDC700] md:text-white md:h-[75px] md:w-[75px] z-30">
                 </div>
-                <div class=" bg-sky-300 w-28 h-full blur-[40px] rounded-full z-20 opacity-100 absolute top-0 left-0 hidden lg:block" ></div>
-                <div class=" bg-sky-300 w-28 h-full blur-[40px] rounded-full z-20 opacity-100 absolute top-0 right-0 hidden lg:block" ></div>
+                <div
+                    class=" bg-sky-300 w-28 h-full blur-[40px] rounded-full z-20 opacity-100 absolute top-0 left-0 hidden lg:block">
+                </div>
+                <div
+                    class=" bg-sky-300 w-28 h-full blur-[40px] rounded-full z-20 opacity-100 absolute top-0 right-0 hidden lg:block">
+                </div>
             </div>
         </section>
         <!-- End Project Slider -->
@@ -533,7 +544,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <!-- Responsive Mobile Price -->
                 <div class="lg:hidden mt-4">
@@ -695,10 +706,12 @@
                 </div>
                 <!-- End Responsive Mobile Price -->
             </div>
-            <div class=" bg-sky-300 w-72 h-72 blur-[300px] z-0 opacity-100 absolute top-[40%] lg:w-full hidden lg:block" ></div>
+            <div
+                class=" bg-sky-300 w-72 h-72 blur-[300px] z-0 opacity-100 absolute top-[40%] lg:w-full hidden lg:block">
+            </div>
         </div>
         <!-- End Design Price -->
-        
+
         <!-- Testi -->
         <section class="font-plus-jakarta-sans">
             <div class="w-full h-full bg-[#B0DCFF] pb-12 relative z-20">
@@ -718,7 +731,8 @@
                                 </div>
                             </div>
                             <div class="mt-6 ">
-                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo design and
+                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo
+                                    design and
                                     branding
                                     strategy catapulted our business to new heights.</p>
                             </div>
@@ -732,7 +746,8 @@
                                 </div>
                             </div>
                             <div class="mt-6">
-                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo design and
+                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo
+                                    design and
                                     branding
                                     strategy catapulted our business to new heights.</p>
                             </div>
@@ -746,7 +761,8 @@
                                 </div>
                             </div>
                             <div class="mt-6">
-                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo design and
+                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo
+                                    design and
                                     branding
                                     strategy catapulted our business to new heights.</p>
                             </div>
@@ -760,7 +776,8 @@
                                 </div>
                             </div>
                             <div class="mt-6">
-                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo design and
+                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo
+                                    design and
                                     branding
                                     strategy catapulted our business to new heights.</p>
                             </div>
@@ -774,7 +791,8 @@
                                 </div>
                             </div>
                             <div class="mt-6">
-                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo design and
+                                <p class="opacity-60">Working with HiSocial was a game-changer for our brand. Their logo
+                                    design and
                                     branding
                                     strategy catapulted our business to new heights.</p>
                             </div>
@@ -784,13 +802,19 @@
                         <div class="swiper-pagination myPagination"></div>
                     </div>
                 </div>
-                <div class="w-[443px] h-[443px] rounded-full  absolute z-0 left-[3%] top-[15%] bg-[#80C5FA] overflow-hidden hidden lg:block">
-                    <div class="w-[443px] h-[443px] rounded-full border border-white absolute z-0 left-[10%] bottom-[10%]"></div>
+                <div
+                    class="w-[443px] h-[443px] rounded-full  absolute z-0 left-[3%] top-[15%] bg-[#80C5FA] overflow-hidden hidden lg:block">
+                    <div
+                        class="w-[443px] h-[443px] rounded-full border border-white absolute z-0 left-[10%] bottom-[10%]">
+                    </div>
                 </div>
-                <div class="w-[443px] h-[443px] rounded-full  absolute z-0 right-[3%] top-[15%] bg-[#80C5FA] overflow-hidden hidden lg:block">
-                    <div class="w-[443px] h-[443px] rounded-full border border-white absolute z-0 left-[10%] bottom-[10%]"></div>
+                <div
+                    class="w-[443px] h-[443px] rounded-full  absolute z-0 right-[3%] top-[15%] bg-[#80C5FA] overflow-hidden hidden lg:block">
+                    <div
+                        class="w-[443px] h-[443px] rounded-full border border-white absolute z-0 left-[10%] bottom-[10%]">
+                    </div>
                 </div>
-                
+
             </div>
         </section>
         <!-- End Testi -->
