@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
     <script>
         tailwind.config = {
             extend: {
@@ -32,6 +33,9 @@
     </script>
 
     <style type="text/tailwindcss">
+        html{
+            scroll-behavior: smooth;
+        }
         @layer base {
             h1,h2,h3,h4,h5,h6 {
                 font-family: 'CabinetGrotesk-Medium', sans-serif;
@@ -143,25 +147,54 @@
     <!-- End Navbar -->
 
     <!-- Filter -->
-    <section class="max-w-[1215px] mx-auto mt-4 px-4 lg:px-0">
+    <section class="max-w-[1215px] mx-auto mt-4  px-4 lg:px-0">
         <div class="flex lg:flex-row flex-col justify-center items-center gap-4">
-            <p class="lg:w-[60%] lg:leading-loose tracking-wide">Many of our design projects are dedicated to a company or individual, by helping and
+            <p class="lg:w-[60%] lg:leading-loose tracking-wide">Many of our design projects are dedicated to a company or
+                individual, by helping and
                 providing needs for them, making us understand that a design has a sense so that users feel comfortable
                 and interested in buying it.</p>
-            <div class="lg:w-[30%] flex justify-end items-end lg:gap-6 gap-2 mt-4 lg:mt-0">
+            <div class="lg:w-[30%] flex justify-end items-end  gap-2 mt-4 lg:mt-0">
                 <button
-                    class="w-full left-0 bg-[#008FFF] rounded-[10px] h-[55px]  text-white text-[22px] font-thin  hover:bg-blue-600">Social
-                    Media Management</button>
-                <div
-                    class="w-[59px] h-[55px] bg-[#D9EEFF] flex justify-center items-center rounded-[8px] cursor-pointer hover:bg-slate-200">
-                    <img src="assets/icons/Vector.svg" alt=""></div>
+                    id="dropdownDefaultButton"
+                    data-dropdown-toggle="dropdown"
+                    class="w-full left-0 bg-[#008FFF] rounded-[10px] h-[55px]  text-white text-[22px] font-thin  hover:bg-blue-600 flex items-center justify-between"><span class="px-3" aria-hidden="true"
+                    typy="button">Social
+                        Media Management</span>
+                    <div
+                        class="w-[59px] h-[55px] bg-[#D9EEFF] flex justify-center items-center rounded-r-[8px] cursor-pointer hover:bg-slate-200">
+                        <img src="assets/icons/Vector.svg" alt="">
+                    </div>
+                </button>
+                <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-xl lg:w-96 w-80" >
+                    <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                      <li>
+                        <a href="#socialmediamanagement" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Social Media Management</a>
+                      </li>
+                      <li>
+                        <a href="#portfolio" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Portfolio</a>
+                      </li>
+                      <li>
+                        <a href="#brandingidentityvisual" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Branding Identity Visual</a>
+                      </li>
+                      <li>
+                        <a href="#logobrandingidentity" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Logo & Branding Identity</a>
+                      </li>
+                      <li>
+                        <a href="#websitesystemservice" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Website & System Service</a>
+                      </li>
+                      <li>
+                        <a href="#digitalmarketingstrategy" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital Marketing Strategy</a>
+                      </li>
+                    </ul>
+                </div>
             </div>
+
         </div>
     </section>
     <!-- End Filter -->
 
     <!-- Social Media Management -->
-    <section class="max-w-[1215px] mx-auto mt-8 px-4 lg:px-0">
+    <section id="socialmediamanagement" class="max-w-[1215px] mx-auto mt-8 px-4 lg:px-0">
         <h1 class="text-center text-[#008FFF] text-[32px] lg:text-[50px] font-semibold">Social Media <span
                 class="text-black">Management</span></h1>
         <div class="flex flex-col lg:flex-row lg:mt-8 mt-4 gap-4">
@@ -218,7 +251,7 @@
     <!-- End Social Media Management -->
 
     <!-- Portfolio -->
-    <section class="max-w-[1215px] mx-auto mt-28 px-4 lg:px-0">
+    <section id="portfolio" class="max-w-[1215px] mx-auto mt-28 px-4 lg:px-0">
         <div class="flex justify-between items-center">
             <h1 class="lg:text-[50px] text-[36px] text-[#008FFF] font-semibold">Portfolio</h1>
             <a href="" class="flex gap-4 border-b-2 border-[#EDC700] py-2 hover:opacity-50 lg:text-[20px] font-bold">
@@ -272,7 +305,7 @@
     <!-- End Portfolio -->
 
     <!-- Branding Identity Visual -->
-    <section class="max-w-[1215px] mx-auto mt-12 lg:mt-28 px-4 lg:px-0">
+    <section id="brandingidentityvisual" class="max-w-[1215px] mx-auto mt-12 lg:mt-28 px-4 lg:px-0">
         <div class="flex lg:flex-row flex-col justify-between lg:items-center">
             <h1 class="lg:w-[50%] text-[38px] lg:text-[55px] text-[#002B44] font-semibold tracking-tight leading-tight">
                 Branding <br><span class="text-[#008FFF]">Identity Visual</span></h1>
@@ -338,7 +371,7 @@
     <!-- End Branding Identity Visual -->
 
     <!-- Our Project Done -->
-    <section class="max-w-[1215px] mx-auto lg:mt-24 mt-12">
+    <section  class="max-w-[1215px] mx-auto lg:mt-24 mt-12">
         <div class="flex flex-col justify-center items-center font-semibold">
             <h1 class="lg:text-[50px] text-[38px] text-[#008FFF]">Our Project Done</h1>
             <div class="h-1 w-[200px] bg-[#EDC700]"></div>
@@ -389,7 +422,7 @@
     <!-- End Our Project Done -->
 
     <!-- Logo & Branding Identity -->
-    <section class="max-w-[1215px] mx-auto lg:mt-28 mt-12 px-4 lg:px-0">
+    <section id="logobrandingidentity" class="max-w-[1215px] mx-auto lg:mt-28 mt-12 px-4 lg:px-0">
         <div class="flex flex-col justify-center items-center lg:text-center">
             <h1 class="lg:text-[60px] text-[38px] text-[#008FFF] font-semibold">Logo & Branding <span
                     class="text-[#002B44]">Identity</span></h1>
@@ -415,7 +448,7 @@
     <!-- End Logo & Branding Identity -->
 
     <!-- Website And System SLider -->
-    <section class=" mx-auto lg:mt-28 mt-12 px-4 lg:px-0">
+    <section id="websitesystemservice" class=" mx-auto lg:mt-28 mt-12 px-4 lg:px-0">
         <div class="flex lg:flex-row flex-col justify-between lg:items-center max-w-[1215px] mx-auto">
             <h1
                 class="lg:text-[60px] text-[38px] text-[#002B44] font-semibold tracking-normal leading-tight lg:w-[30%]">
@@ -447,9 +480,9 @@
                 </div>
             </div>
             <div
-                class="swiper-button-next rounded-full md:bg-[#EDC700] md:text-white text-[12px] md:h-[75px] md:w-[75px] z-30">
+                class="swiper-button-next rounded-full md:bg-[#EDC700] text-white text-[12px] md:h-[75px] md:w-[75px] z-30">
             </div>
-            <div class="swiper-button-prev rounded-full md:bg-[#EDC700] md:text-white md:h-[75px] md:w-[75px] z-30">
+            <div class="swiper-button-prev rounded-full md:bg-[#EDC700] text-white md:h-[75px] md:w-[75px] z-30">
             </div>
             <div
                 class=" bg-white w-28 h-full blur-[40px] rounded-full z-20 opacity-100 absolute top-0 left-0 hidden lg:block">
@@ -477,7 +510,7 @@
     <!-- End Website And System SLider -->
 
     <!-- Digital Marketing Strategy -->
-    <section class="max-w-[1215px] mx-auto mt-12 lg:mt-28 px-4 lg:px-0">
+    <section id="digitalmarketingstrategy" class="max-w-[1215px] mx-auto mt-12 lg:mt-28 px-4 lg:px-0">
         <h1 class="lg:text-center text-[38px] lg:text-[60px] text-[#008FFF] font-semibold">Digital Marketing <span
                 class="text-[#002B44]">Strategy</span></h1>
         <div class="flex lg:flex-row flex-col mt-6 gap-6">
@@ -659,6 +692,7 @@
     </footer>
     <!-- End Footer -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module">
